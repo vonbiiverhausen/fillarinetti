@@ -1,0 +1,25 @@
+{
+    "description": "Ilmoituksen tietorakenne",
+    "type": "object",
+    "properties": {
+        "ilmoituksen_id": {"type": "string"},
+        "ilmoituksen_jattaja": {"type": "string"},
+        "ilmoituksen_tila": {"type": "string"},
+        "hinta": {
+            "type": "number",
+            "minimum": 0
+        },
+        "pyörä": {
+            "type": "object",
+            "properties": {
+                "tila": {"type": "string"},
+                "valmistaja": {"type": "string"},
+                "tyyppi": {"type": "string"},
+                "Koko": {"type": "string"},
+                "Vuosimalli": {"type": "number"},
+                "Materiaali": {"type": "string"},
+                "Kuvaus": {"type": "string"}
+            }
+        }
+    }
+}
