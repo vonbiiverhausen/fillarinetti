@@ -3,10 +3,42 @@
   margin: 0;
   padding: 0;
 }
+
 button {
   size: 50px;
   border-radius: 5px;
   padding: 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(99, 92, 92);
+}
+img {
+  max-width: 300px;
 }
 /* Header styles */
 .header {
@@ -15,21 +47,23 @@ button {
   background-color: brown;
 }
 #logo {
-  width: 100px;
+  width: 150px;
+  padding-left: 15px;
 }
 #logo_container {
-  margin: 10px;
+  align-items: center;
 }
-#logo_container button {
+#leave_post_btn {
   background-color: blue;
   color: white;
   float: right;
-  margin-top: 15%;
 }
 #login_register {
+  align-items: center;
   background-color: aqua;
 }
 #leave_post_container {
+  align-items: center;
   vertical-align: middle;
   background-color: red;
 }
@@ -43,12 +77,26 @@ button {
 .accurate_search_btn_container {
   background-color: pink;
 }
+#accurate_search {
+  margin: 20px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+}
 /* Post container styles */
 .posts_container {
+  display: grid;
+  grid-template-columns: 33% 34% auto;
   background-color: blueviolet;
 }
 
 /* Footer syles*/
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: chartreuse;
+  color: white;
+  text-align: center;
 }
