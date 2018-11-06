@@ -1,42 +1,54 @@
 * {
-  margin: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+button {
+  size: 50px;
+  border-radius: 5px;
+  padding: 2px;
+}
+/* Header styles */
 .header {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-
-  align-items: center;
-  background: #06d641;
-  height: 100px;
+  display: grid;
+  grid-template-columns: 20% 34% auto;
+  background-color: brown;
 }
-
-.logo {
+#logo {
   width: 100px;
-  margin-left: 10px;
 }
-
-#user_input {
-  margin-left: 20px;
-  height: 40%;
+#logo_container {
+  margin: 10px;
 }
-#register {
-  margin-left: 20px;
-  align-items: center;
-}
-#log_in {
-  margin-left: 20px;
-}
-#leave_post {
-  margin-right: 20px;
-
-  height: 50px;
-  border-radius: 10px;
-  background-color: #1e74cc;
+#logo_container button {
+  background-color: blue;
   color: white;
+  float: right;
+  margin-top: 15%;
+}
+#login_register {
+  background-color: aqua;
+}
+#leave_post_container {
+  vertical-align: middle;
+  background-color: red;
+}
+
+/*Quick search menubar styles*/
+.quick_search_links {
+  background-color: blue;
+}
+
+/* Accurate search styles */
+.accurate_search_btn_container {
+  background-color: pink;
+}
+/* Post container styles */
+.posts_container {
+  background-color: blueviolet;
+}
+
+/* Footer syles*/
+.footer {
+  background-color: chartreuse;
 }
