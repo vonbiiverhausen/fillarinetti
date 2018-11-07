@@ -22,9 +22,18 @@
 
         </div>
         <div id="login_register">
+<<<<<<< HEAD
             <input id="user_input" type="text" placeholder="Käyttäjätunnus">
             <button id="log_in_btn">Kirjaudu</button>
             <button id="register_btn">Rekisteröidy</button>
+=======
+            <form action="lol.php" method="post" onsubmit="return checkinputs()">
+            <input id="user_input" type="text" placeholder="Käyttäjätunnus">
+            <input id="salasana_input" type="password" placeholder="Salasana">
+            <button id="log_in_btn">Kirjaudu</button>
+            <button id="register_btn">Rekisteröidy</button>
+                </form>
+>>>>>>> samin_oksa
         </div>
     </div>
     <div class="quick_search_links">
@@ -47,6 +56,34 @@
 </body>
 
 </html>
+<<<<<<< HEAD
+=======
+<!-- added javascript codes -->
+<script type="text/javascript" >
+    
+function checkinputs(){
+    var user = document.getElementById("user_input").value;
+    var salasana = document.getElementById("salasana_input").value;
+    if(user != '' && user != null){
+        document.getElementById('user_input').style.borderColor = "white";
+    }else{
+        alert("käyttäjä tunnus puuttuu jos et ole rekisteröitynyt, niin Rekisteröidy ");
+         document.getElementById('user_input').style.borderColor = "red";
+        
+        return false;
+    }
+    if(salasana != '' && salasana != null){
+        return true;
+    }else{
+        alert("Salasana puuttuu");
+        document.getElementById('salasana_input').style.borderColor = "red";
+        return false;
+    }
+}
+ 
+</script>
+
+>>>>>>> samin_oksa
 <!--- 
         
         
