@@ -40,13 +40,16 @@
     </div>
 
     <div class="posts_container">
-        <form action="">
-            <input type="radio" name="bikeType" value="mtb"> Maastopyörä<br>
-            <input type="radio" name="bikeType" value="mtb"> Tasamaapyörä<br>
-            <input type="radio" name="bikeType" value="mtb"> Peruspyörä<br>
-            <input type="radio" name="bikeType" value="mtb"> Lastenpyörä<br>
-            <input type="radio" name="bikeType" value="mtb"> Sähköpyörä<br>
-        </form>
+        <select id="mySelect" onchange="myFunction()">
+            <option value="mtb">Maastopyörä
+            <option value="roadbike">Tasmaapyörä
+            <option value="basicBike">Peruspyörä
+            <option value="kidsBike">Lastenpyörä
+            <option value="eBike">Sähköpyörä
+        </select>
+        <div class="form">
+            <p></p>
+        </div>
     </div>
     <div class="footer">
         <h1>Tähän tulee footer </h1>
