@@ -94,3 +94,10 @@ button {
     background-color: aliceblue;
     color: black;
 }
+h1{
+    position: relative;
+    color: black;
+    top: 10px;
+    float: right;
+    padding-right: 60px;
+}
