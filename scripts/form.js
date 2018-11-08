@@ -4,11 +4,11 @@ document.getElementById("logo").addEventListener("click", function() {
   window.location = "http://127.0.0.1:5500/index.html";
   console.log("testi");
 });
-function myFunction() {
+myFunction = () => {
   const x = document.getElementById("mySelect").value;
 
   if (x === "mtb") {
-    valueMenu();
+    console.log("mtb");
   } else if (x === "roadbike") {
     console.log("tasamaapyörät");
   } else if (x === "basicBike") {
@@ -16,7 +16,12 @@ function myFunction() {
   } else if (x === "kidsBike") {
     console.log("lastenpyörät");
   } else if (x === "eBike");
-}
+};
+
+formSelection = () => {
+  const z = document.getElementById("menu").value;
+  console.log(z);
+};
 //function that creates bike type menu
 /*
 function valueMenu() {
@@ -61,10 +66,3 @@ function valueMenu() {
   console.log(element);
 }
 */
-function replaceOldmenu() {}
-
-function mtbForm() {
-  console.log(value);
-}
-
-valueMenu();
