@@ -20,7 +20,76 @@ myFunction = () => {
 
 formSelection = () => {
   const z = document.getElementById("menu").value;
-  console.log(z);
+
+  if (z === "noSus") {
+    noSusForm();
+  } else if (z === "frSus") {
+    CreateFrsusForm();
+  } else if (z === "fullSus") {
+    fullSusForm();
+  } else {
+    fatbikeForm();
+  }
+};
+//Creates no suspension form
+CreateNoSusForm = () => {
+  console.log("ei jousta");
+};
+//Creates frontsuspension bike form.
+CreateFrsusForm = () => {
+  console.log("etujousto");
+  //elements for the new form
+  const elmnt = document.createElement("div");
+  const formStucture = document.createElement("form");
+  const brandInput = document.createElement("input");
+  const prizeInput = document.createElement("input");
+  const sizeInput = document.createElement("input");
+  const wheelSizeInput = document.createElement("input");
+  const picInput = document.createElement("input");
+  const submitBtn = document.createElement("button");
+  // id:s for elements
+  elmnt.id = "frsusForm";
+  formStucture.id = "form";
+  brandInput.id = "brandID";
+  prizeInput.id = "prizeID";
+  sizeInput.id = "sizeID";
+  wheelSizeInput.id = "wheelID";
+  picInput.id = "picID";
+  submitBtn.id = "submitID";
+  //Placeholders for inputs
+  brandInput.placeholder = "Merkki";
+  prizeInput.placeholder = "Hinta";
+  sizeInput.placeholder = "Rungonkoko";
+  wheelSizeInput.placeholder = "Renkaan koko";
+  submitBtn.innerHTML = "Jätä ilmoitus";
+  //Input types
+  brandInput.type = "text";
+  prizeInput.type = "number";
+  sizeInput.type = "number";
+  wheelSizeInput.type = "number";
+  picInput.style = "file";
+  submitBtn.type = "submit";
+  //Everything to getter
+  formStucture.appendChild(brandInput);
+  formStucture.appendChild(prizeInput);
+  formStucture.appendChild(sizeInput);
+  formStucture.appendChild(wheelSizeInput);
+  formStucture.appendChild(picInput);
+  formStucture.appendChild(submitBtn);
+
+  const old_element = document.querySelector("#lomake");
+  const parent = document.getElementById("form");
+
+  parent.replaceChild(elmnt, old_element);
+};
+
+//Creates fullsuspension form
+CreateFullSusForm = () => {
+  console.log("täysjousto");
+};
+//Creates fatbike form
+CreateFatbikeForm = () => {
+  console.log("fatbike");
 };
 //function that creates bike type menu
 /*
