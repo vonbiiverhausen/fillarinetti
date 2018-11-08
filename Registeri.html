@@ -11,44 +11,35 @@
 
 </head>
 
-<body>
+<body id="body_backgound">
     <div class="header">
         <div id="logo_container">
             <img id="logo" src="fillarinetti_logo_1.png" alt="Logo">
             <button id="leave_postBtn">Jätä ilmoitus</button>
         </div>
         <div id="leave_post_container">
-
-
-        </div>
+ </div>
         <div id="login_register">
   <form action="lol.php" method="post" onsubmit="return checkinputs()">
             <input id="user_input" type="text" placeholder="Käyttäjätunnus">
             <input id="salasana_input" type="password" placeholder="Salasana">
             <button id="log_in_btn">Kirjaudu</button>
-      
             <button class="register_btn">Rekisteröidy</button>
                 </form>
         </div>
     </div>
-    <div class="quick_search_links">
-        <h1>Tähän tulee pikalinkit</h1>
+    <div id="regiter_formi">
+        <form action="register.html" method="post" onsubmit="return checkregiterform()">
+            <input class="register_btns" type="text" placeholder="Käyttäjätunnus">
+            <input class="register_btns" type="text" placeholder="Sähköposti">
+            <input class="register_btns" type="text" placeholder="PuhelinNumero">
+            <input class="register_btns" type="password" placeholder="Salasana">
+            <input class="register_btns" type="password" placeholder="Salasana uudestaan">
+            <input id="register_btn" type="submit" value="Rekisteröidy">
+            
+        </form>
     </div>
-    <div class="accurate_search_btn_container">
-        <h1>Tähän tulee tarkkahaku nappi</h1>
-    </div>
-    <div class="posts_container">
-        <h1>Tähän tulee myynti-ilmoitukset </h1>
-    </div>
-    <div class="footer">
-        <h1>Tähän tulee footer </h1>
-    </div>
-
-
-
-
-
-</body>
+    </body>
 
 </html>
 <!-- added javascript codes -->

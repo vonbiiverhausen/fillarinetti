@@ -52,3 +52,28 @@ button {
 .footer {
   background-color: chartreuse;
 }
+#regiter_formi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 450px;
+    background-color: darkred;
+    border: 2px solid yellow;
+}
+#body_backgound{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
+    height: 1700px;
+    background-size: cover;
+    background-position: center;
+}
+.register_btns{
+    height: 30px;
+    position: static;
+    left: 100px;
+    margin-top: 25px;
+    margin-left: 64px;
+    margin-bottom: 10px;
+}
