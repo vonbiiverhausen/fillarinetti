@@ -12,13 +12,15 @@ button {
 .header {
   display: grid;
   grid-template-columns: 20% 34% auto;
-  background-color: brown;
+  background-color: #06D641;
 }
 #logo {
-  width: 100px;
+    top: 1px;
+    position: relative;
+    width: 140px;
 }
 #logo_container {
-  margin: 10px;
+  margin: 20px;
 }
 #logo_container button {
   background-color: blue;
@@ -28,6 +30,7 @@ button {
 }
 #login_register {
   background-color: aqua;
+    float: right;
 }
 #leave_post_container {
   vertical-align: middle;
@@ -50,5 +53,30 @@ button {
 
 /* Footer syles*/
 .footer {
-  background-color: chartreuse;
+    background-color: gainsboro;
+    min-height: 40%;
+    top: 50%;
+    position: relative;
+    margin-bottom: 0;
+}
+.footer #fteksti{
+    position: relative;
+    padding-left: 0px;
+    text-align: center;
+    top: 30px;
+    font-size: 13px;
+    color: dimgray;
+    font: Sans-serif;
+}
+.footer #fcopy{
+    float: right;
+    position: relative;
+    top:29px;
+    padding-right: 300px;
+    font-size: 13px;
+    color: dimgray;
+    font: Sans-serif;
+    }
+    
+    
 }
