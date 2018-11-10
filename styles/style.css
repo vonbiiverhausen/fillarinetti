@@ -5,7 +5,7 @@
 }
 button {
   size: 50px;
-  border-radius: 5px;
+  border-radius: 5px solid;
   padding: 2px;
 }
 /* Header styles */
@@ -51,4 +51,53 @@ button {
 /* Footer syles*/
 .footer {
   background-color: chartreuse;
+}
+#regiter_formi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 450px;
+    background-color: darkred;
+    border: 2px solid yellow;
+    background-color:rgba(255,255,255,0.1);
+}
+#body_backgound{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
+    height: 1700px;
+    background-size: cover;
+    background-position: center;
+}
+.register_inputs{
+    background-color: white;
+    height: 30px;
+    position: static;
+    left: 100px;
+    margin-top: 25px;
+    margin-left: 64px;
+    margin-bottom: 10px;
+}
+#register_btn{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 2px solid red;
+    background: black;
+    color: aliceblue;
+
+}
+#register_btn:hover{
+    background-color: aliceblue;
+    color: black;
+}
+h1{
+    position: relative;
+    color: black;
+    top: 10px;
+    float: right;
+    padding-right: 60px;
 }

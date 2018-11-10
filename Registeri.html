@@ -1,0 +1,147 @@
+<!DOCUMENT <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fillarinetti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+
+
+</head>
+
+<body id="body_backgound">
+    <div class="header">
+        <div id="logo_container">
+            <img id="logo" src="fillarinetti_logo_1.png" alt="Logo">
+            <button id="leave_postBtn">Jätä ilmoitus</button>
+        </div>
+        <div id="leave_post_container">
+ </div>
+    </div>
+    <div id="regiter_formi">
+        <h1>Rekisteröidy</h1>
+        <form action="register.html" method="post" onsubmit="return checkregiterform()">
+            <input class="register_inputs" id="kayttaja" type="text" placeholder="Käyttäjätunnus">
+            <input class="register_inputs" id="sahkoposti" type="text" placeholder="Sähköposti">
+            <input class="register_inputs" id="pnumero" type="text" placeholder="Puhelinnumero">
+            <input class="register_inputs" id="salasanaeka" type="password" placeholder="Salasana">
+            <input class="register_inputs" id="salasanatoka" type="password" placeholder="Salasana uudestaan">
+            <input id="register_btn" type="submit" value="Rekisteröidy">
+            
+        </form>
+    </div>
+    </body>
+
+</html>
+<!-- added javascript codes -->
+<script type="text/javascript" >
+    
+function checkregiterform(){
+    var kayttaja = document.getElementById("kayttaja").value;
+    var sahkoposti = document.getElementById("sahkoposti").value;
+    var pnumero = document.getElementById("pnumero").value;
+    var filter =  /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var salasanaeka = document.getElementById("salasanaeka").value;
+     var salasanatoka = document.getElementById("salasanatoka").value;
+    
+    //käyttäjätunnuksen tarkistus koodit!
+    if(kayttaja != '' && kayttaja != null){
+        document.getElementById('kayttaja').style.borderColor = "white";
+   if(!isNaN(kayttaja)){
+       alert("käyttäjätunnuksessa ei voi olla vain numeroita!");
+        document.getElementById('kayttaja').style.borderColor = "red";
+       return false;
+   }else if(kayttaja.match( /[^a-z0-9\@\#]/i) != null){
+       alert("Käyttäjätunnuksessa saa olla vain näitä (Aa0-9zZ,@,#) merkkejä ");
+       return false;
+   }else if(kayttaja.length >= 28){
+            alert("käyttäjätunnuksessa ei saa olla enemmän kuin 28 kirjäintää");
+            document.getElementById('kayttaja').style.borderColor = "red";
+       return false;
+            }
+        else if(kayttaja.length <= 3){
+                alert("käyttäjätunnuksessa ei saa olla vähintään 3 kirjäintää");
+                document.getElementById('kayttaja').style.borderColor = "red";
+            return false;
+                }
+    }else{
+        alert("käyttäjätunnus kenttä ei saa olla tyhjä! ");
+         document.getElementById('kayttaja').style.borderColor = "red";
+        return false;}
+    
+//Sähköposti kenttän tarkistus koodit
+    if(sahkoposti != '' && sahkoposti != null){
+        document.getElementById('sahkoposti').style.borderColor = "white";
+   if(!isNaN(sahkoposti)){
+       alert("Sähköpostissä ei voi olla vain numeroita!");
+        document.getElementById('sahkoposti').style.borderColor = "red";
+       return false;
+   }else if(sahkoposti.length >= 38){
+            alert("Sähköpostissä ei saa olla enemmän kuin 37 kirjäintää");
+       return false;
+            }
+        else if (!filter.test(sahkoposti)) {
+            alert("Anna kelvollinen sähköpostiosoite");
+            document.getElementById('sahkoposti').style.borderColor = "red";
+            sahkoposti.focus;
+    return false;
+ }
+    }else{
+        alert("Sähköposti kenttä ei saa olla tyhjä! ");
+         document.getElementById('sahkoposti').style.borderColor = "red";
+        
+        return false;
+    }
+    
+    //Puhelinnumeron kenttän tarkistus
+    if(pnumero != '' && pnumero != null){
+        document.getElementById('pnumero').style.borderColor = "white";
+   if(isNaN(pnumero)){
+       alert("Puhelinnumerossa ei voi olla merkkejä tai kirjäimiä!");
+        document.getElementById('pnumero').style.borderColor = "red";
+       return false;
+   }else if(pnumero.length != 10){
+            alert("Puhelinnumerossa ei saa olla enemmän tai vähemmän kuin 10 numeroita");
+            document.getElementById('pnumero').style.borderColor = "red";
+       return false;
+            }
+    }else{
+        alert("Puhelinnumero kenttä ei saa olla tyhjä! ");
+         document.getElementById('pnumero').style.borderColor = "red";
+        return false;
+    }
+   
+    //Salasanan kenttän tarkistus
+     if(salasanaeka != '' && salasanaeka != null){
+        document.getElementById('salasanaeka').style.borderColor = "white";
+   if(salasanaeka.length < 5){
+       alert("Salasanasi on liian lyhyt, yritä uudelleen!");
+        document.getElementById('salasanaeka').style.borderColor = "red";
+       return false;
+   }else if(salasanaeka.length > 31){
+       alert("Salasanasi on liian suuri, yritä uudelleen!");
+       return false;
+   }
+     }else{
+         alert("Salasanan kenttä ei saa olla tyhjä!");
+         document.getElementById('salasanaeka').style.borderColor = "red";
+         return false;
+     }
+    
+    // Tokan salasanan tarkistus koodi
+    if(salasanatoka !='' && salasanatoka != null){
+        document.getElementById('salasanaeka').style.borderColor = "white";
+        if(salasanatoka != salasanaeka){
+           alert("Salasanat eivät ole samat");
+            return false;
+           }
+    }else{
+        document.getElementById('salasanatoka').style.borderColor = "red";
+        alert("salasanan uudelleen kenttä ei saa olla tyhjä!");
+        return false;
+    }
+   }
+ 
+</script>
