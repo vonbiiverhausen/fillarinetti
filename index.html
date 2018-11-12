@@ -23,9 +23,14 @@
 
         </div>
         <div id="login_register">
+            <form action="lol.php" method="post" onsubmit="return checkinputs()">
             <input id="user_input" type="text" placeholder="Käyttäjätunnus">
+            <input id="salasana_input" type="password" placeholder="Salasana">
             <button id="log_in_btn">Kirjaudu</button>
-            <button id="register_btn">Rekisteröidy</button>
+            </form>
+            <form action="registeri.html">
+            <button id="register_indexbtn">Rekisteröidy</button>
+                </form>
         </div>
     </div>
     <div class="quick_search_links">
@@ -46,17 +51,18 @@
     </div>
 
     <div class="posts_container">
-        <div><img src="fillarinetti/testi_kuva.jpg" alt=""></div>
-        <div><img src="fillarinetti/testi_kuva2.jpg" alt=""></div>
-        <div><img src=" fillarinetti/testi_kuva3.jpg" alt=""></div>
-        <div><img src="fillarinetti/testi_kuva4.jpg" alt=""></div>
-        <div><img src="fillarinetti/testi_kuva5.jpg" alt=""></div>
-        <div><img src="fillarinetti/testi_kuva6.jpg" alt=""></div>
+        <div><img src="testi_kuva.jpg" alt=""></div>
+        <div><img src="testi_kuva2.jpg" alt=""></div>
+        <div><img src="testi_kuva3.jpg" alt=""></div>
+        <div><img src="testi_kuva4.jpg" alt=""></div>
+        <div><img src="testi_kuva5.jpg" alt=""></div>
+        <div><img src="testi_kuva6.jpg" alt=""></div>
     </div>
     <div class="footer">
         <h1>Tähän tulee footer </h1>
     </div>
     <script src="scripts/script.js"></script>
+    
 </body>
 
 </html>
