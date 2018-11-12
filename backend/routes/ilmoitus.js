@@ -1,9 +1,8 @@
+// Moduulien tuonto
 const express = require('express');
 const app = express();
 const polku = require('path');
-
-// ilmoitukset-kirjaston tuonti
-const ilmoitukset = require('../ilmoitukset.js');
+//const ilmoitukset = require('../ilmoitukset.js');
 
 // Routerin luonti
 const ilmoitusRouter = express.Router();
