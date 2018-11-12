@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const sql = require('mysql');
 
+// Tietokantayhteys
 const yhteys = sql.createConnection(
     {
         host: "localhost",
@@ -45,11 +46,26 @@ kayttajaRouter.get('/:username', (req, res, next) => {
     // Haetaan kaikki 
     let kayttajaTunnus = req.params.username;
     yhteys.query("select * from kayttaja where username = ?", [kayttajaTunnus], (err, result, fields) => {
-        console.log(result);
         if (err){
             res.send({"virhe": err.message});
         } else {
             res.send(result[0]);
+        }
+    });
+});
+
+// Listaa käyttäjän ilmoitukset
+kayttajaRouter.get('/:username/ilmoitukset', (req, res, next) => {
+    // Haetaan kaikki 
+    let kayttajaTunnus = req.params.username;
+    yhteys.query(`select ilmId as 'Ilmoituksen id', ilmJatetty as 'Ilmoitus jätetty', ilmTila as 'Ilmoituksen tila', hinta as 'Hinta' from ilmoitus 
+    JOIN kayttaja
+    on ilmoitus.ilmJattaja = kayttaja.username
+    where kayttaja.username = ?`, [kayttajaTunnus], (err, result, fields) => {
+        if (err){
+            res.send({"virhe": err.message});
+        } else {
+            res.send(result);
         }
     });
 });
@@ -87,7 +103,7 @@ kayttajaRouter.put('/:username/salasana', (req, res, next) => {
     let kayttajaTunnus = req.params.username;
     let user = req.query;
 
-    yhteys.query("update kayttaja password = ? where username = ?", [user.password, kayttajaTunnus], (err, result, fields) => {
+    yhteys.query("update kayttaja set password = ? where username = ?", [user.password, kayttajaTunnus], (err, result, fields) => {
         console.log(result);
         if (err){
             res.send({"virhe": err.message});
