@@ -61,9 +61,41 @@
             <br>
             <input type="number" name="prize" placeholder="Hinta">
             <br>
-            <input type="number" name="wheelSize" placeholder="Rengas koko">
+            <select class="wheelsize_menu" name="wheelSize">
+                <option value="" disabled selected>Rengaskoko</option>
+                <option value="20">20"</option>
+                <option value="24">24"</option>
+                <option value="26">26"</option>
+                <option value="27.5">27.5"</option>
+                <option value="27.5+">27.5+"</option>
+                <option value="28">28"</option>
+                <option value="29+">29+"</option>
+                <option value="29">29"</option>
+              </select>
             <br>
-            <input type="number" name="size" placeholder="Rungon koko">
+            <select class="bodySize_menu" name="size" onchange="getBodysize()">
+                    <option value="" disabled selected>Rungokoko</option>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <!--Inch sizes-->
+                    <option value="inc_s">15-16”</option>
+                    <option value="inc_m">17-18”</option>
+                    <option value="inc_l">19-20”</option>
+                    <option value="inc_xl">21-22”</option>
+                  </select>
+            <br>
+            <select id="susTravel_menu" name="susTravel" onchange="getSusTarvel()">
+                    <option value="" disabled selected>Jousto</option>
+                    <option value="xs">80-125mm</option>
+                    <option value="s">130-155mm</option>
+                    <option value="m">160-210mm</option>
+                    
+                  </select>
+            <br>
+            <input type="text" name="location" placeholder="Paikkakunta">
             <br>
             <div class="upload_btn_wrapper">
                 <button id="lataa_kuva">Lisää kuva</button>

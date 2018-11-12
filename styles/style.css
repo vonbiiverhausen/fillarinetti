@@ -109,6 +109,31 @@ li a:hover {
 #form input:hover {
   background-color: #dddddd;
 }
+.wheelsize_menu {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: #dddddd;
+  text-align: center;
+}
+.bodySize_menu {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: #dddddd;
+  text-align: center;
+}
+#susTravel_menu {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: #dddddd;
+  text-align: center;
+  visibility: hidden;
+}
 .upload_btn_wrapper {
   position: relative;
   overflow: hidden;
@@ -146,7 +171,7 @@ textarea {
 
 /* register form styles */
 
-#regiter_formi{
+#regiter_formi {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,15 +181,16 @@ textarea {
   height: 450px;
   background-color: darkred;
   border: 2px solid yellow;
-  background-color:rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
-#body_backgound{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
+#body_backgound {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../testi_kuva.jpg");
   height: 1700px;
   background-size: cover;
   background-position: center;
 }
-.register_inputs{
+.register_inputs {
   background-color: white;
   height: 30px;
   position: static;
@@ -173,7 +199,7 @@ textarea {
   margin-left: 64px;
   margin-bottom: 10px;
 }
-#register_btn{
+#register_btn {
   position: relative;
   left: 100px;
   top: 20px;
@@ -182,12 +208,8 @@ textarea {
   border: 2px solid red;
   background: black;
   color: aliceblue;
-
 }
-#register_btn:hover{
+#register_btn:hover {
   background-color: aliceblue;
   color: black;
 }
-
-
-
