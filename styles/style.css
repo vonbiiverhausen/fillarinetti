@@ -40,23 +40,19 @@ li a:hover {
 
 /* Header styles */
 .header {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 20% 34% auto;
-    background-color: #06d641;
+  display: grid;
+  grid-template-columns: 20% 34% auto;
+  background-color: #06d641;
+}
+#logo {
+  width: 100%;
 }
 #logo_container {
   align-items: center;
 }
-#logo_container #logo {
-  width: 100%;
-}
-.header #leave_post_Btn{
-    position: relative;
-    background-color: blue;
-    top: 0px;
-    left: 100%;
-    color: white;
+#leave_post_btn {
+  background-color: blue;
+  color: white;
 }
 #login_register {
   align-items: center;
@@ -147,52 +143,51 @@ textarea {
   color: white;
   text-align: center;
 }
+
+/* register form styles */
+
 #regiter_formi{
-    position: absolute;
-    top: 600px;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
-    width: 300px;
-    height: 450px;
-    background-color: darkred;
-    border: 2px solid yellow;
-    background-color:rgba(255,255,255,0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  width: 300px;
+  height: 450px;
+  background-color: darkred;
+  border: 2px solid yellow;
+  background-color:rgba(255,255,255,0.1);
 }
 #body_backgound{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
-    height: 1700px;
-    background-size: cover;
-    background-position: center;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
+  height: 1700px;
+  background-size: cover;
+  background-position: center;
 }
 .register_inputs{
-    background-color: white;
-    height: 30px;
-    position: static;
-    left: 100px;
-    margin-top: 25px;
-    margin-left: 64px;
-    margin-bottom: 10px;
+  background-color: white;
+  height: 30px;
+  position: static;
+  left: 100px;
+  margin-top: 25px;
+  margin-left: 64px;
+  margin-bottom: 10px;
 }
 #register_btn{
-    position: relative;
-    left: 100px;
-    top: 20px;
-    font-size: 17px;
-    cursor: pointer;
-    border: 2px solid red;
-    background: black;
-    color: aliceblue;
+  position: relative;
+  left: 100px;
+  top: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border: 2px solid red;
+  background: black;
+  color: aliceblue;
 
 }
 #register_btn:hover{
-    background-color: aliceblue;
-    color: black;
+  background-color: aliceblue;
+  color: black;
 }
-h1{
-    position: relative;
-    color: black;
-    top: 10px;
-    float: right;
-    padding-right: 60px;
-}
+
+
+
