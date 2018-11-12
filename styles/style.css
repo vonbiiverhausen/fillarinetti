@@ -40,19 +40,23 @@ li a:hover {
 
 /* Header styles */
 .header {
-  display: grid;
-  grid-template-columns: 20% 34% auto;
-  background-color: #06d641;
-}
-#logo {
-  width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 20% 34% auto;
+    background-color: #06d641;
 }
 #logo_container {
   align-items: center;
 }
-#leave_post_btn {
-  background-color: blue;
-  color: white;
+#logo_container #logo {
+  width: 100%;
+}
+.header #leave_post_Btn{
+    position: relative;
+    background-color: blue;
+    top: 0px;
+    left: 100%;
+    color: white;
 }
 #login_register {
   align-items: center;
@@ -145,7 +149,7 @@ textarea {
 }
 #regiter_formi{
     position: absolute;
-    top: 50%;
+    top: 600px;
     left: 50%;
     margin-top: -150px;
     margin-left: -150px;
