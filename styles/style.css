@@ -82,7 +82,7 @@ li a:hover {
 /* Post container styles */
 .posts_container {
   display: grid;
-  grid-template-columns: 33% 34% auto;
+  grid-template-columns: auto auto auto;
   background-color: white;
 }
 .posts_container img {
