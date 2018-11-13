@@ -136,19 +136,20 @@ textarea {
 }
 /* Footer syles*/
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(162, 165, 159);
-  color: white;
-  text-align: center;
+    top: 500px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(162, 165, 159);
+    color: white;
+    text-align: center;
 }
 
 /* register form styles */
 
 #regiter_formi{
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 50%;
   margin-top: -150px;
   margin-left: -150px;
@@ -188,6 +189,21 @@ textarea {
   background-color: aliceblue;
   color: black;
 }
-
-
-
+.dkuvat{
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    background-color: DodgerBlue;
+}
+.dkuvat > .picitems{
+    background-color: #f1f1f1;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    float: right;
+    margin: 25px 15px 25px 25px;
+    text-align: center;
+    font-size: 30px;
+}
