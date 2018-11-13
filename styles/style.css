@@ -74,10 +74,16 @@ li a:hover {
   background-color: pink;
 }
 #accurate_search {
-  margin: 20px;
-  width: 200px;
-  background-color: blue;
-  color: white;
+    margin: 20px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+#accurate_search:hover{
+    background: black;
+    border: 2px solid red;
+    color: aliceblue;
 }
 /* Post container styles */
 .posts_container {
@@ -206,4 +212,17 @@ textarea {
     margin: 25px 15px 25px 25px;
     text-align: center;
     font-size: 30px;
+}
+/* tarkka hakun  stylee alkaa tasta! */
+.tarkkahaku_div{
+    border: 10px solid dodgerblue;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: skyblue;
+    height: 500px;
+}
+.tarkkahaku_div .htradio a{
+    position: relative;
+    font-size: 50px;
 }
