@@ -20,14 +20,40 @@
     </div>
     <div class="tarkkahaku_div">
             <div id="radios_div">
-    <form action="#" method="post" onsubmit=" return tarhaku()" onclick="hakuradio" >
-            <input type="radio" id="htradio" name="1" value="maastopoyra" /><a class="radiovalue">Maastopyörä</a>
-            <input type="radio" id="htradio" name="2" value="tasamaapöyrät" /><a class="radiovalue">Tasamaapöyrät</a>
-            <input type="radio" id="htradio" name="3" value="peruspoyrat" /><a class="radiovalue">Peruspöyrät</a>
-            <input type="radio" id="htradio" name="4" value="lastenpoyrat" /><a class="radiovalue">Lastenpöyrät</a>
-            <input type="radio" id="htradio" name="5" value="sahkopoyrat" /><a class="radiovalue">SähköPöyrät</a>
+    <form class="formin_haku" action="#" method="post" onsubmit=" return tarhaku()" onclick="hakuradio()" >
+            <div>
+                <input type="radio" id="htradio" name="rad" value="maastopoyra" /><a class="radiovalue">Maastopyörä</a>
+            </div>
+            <div>
+                <input type="radio" id="htradio" name="rad" value="tasamaapöyrät" /><a class="radiovalue">Tasamaapöyrät</a>
+            </div>
+            <div>
+                <input type="radio" id="htradio" name="rad" value="peruspoyrat" /><a class="radiovalue">Peruspöyrät</a>
+        </div>
+            <div>
+                <input type="radio" id="htradio" name="rad" value="lastenpoyrat" /><a class="radiovalue">Lastenpöyrät</a>
+        </div>
+            <div>
+                <input type="radio" id="htradio" name="rad" value="sahkopoyrat" /><a class="radiovalue">SähköPöyrät</a>
+            </div>
     </form>
             </div>
     </div>
 </body>
 </htlm>
+<script type="text/javascript">
+        function hakuradio(){
+            var type = document.getElementsByName("rad");
+            if(type[0].checked){
+                
+            }else if (type[1].checked){
+            
+            }else if (type[2].checked){
+                
+            }else if (type[3].checked){
+                
+            }else if (type[4].checked){
+                
+            }
+        }
+</script>
