@@ -36,14 +36,18 @@
 
     <div class="menu_container">
       <select id="mySelect" onchange="myFunction()">
-        <option value="mtb">Maastopyörä </option
-        ><option value="roadbike">Tasamaapyörä </option
-        ><option value="basicBike">Peruspyörä </option
-        ><option value="kidsBike">Lastenpyörä </option
-        ><option value="eBike">Sähköpyörä </option></select
-      >
-
-      <select id="menu" onchange="formSelection()">
+        <option value="eBike">Sähköpyörä </option>
+        <option value="mtb">Maastopyörä </option>
+        <option value="roadbike">Tasamaapyörä </option>
+        <option value="basicBike">Peruspyörä </option>
+        <option value="kidsBike">Lastenpyörä </option>
+      </select>
+      <select id="eBikeType" onchange="">
+        <option value="eMtb">E-Maastopyörä</option>
+        <option value="eHybrid">E-Hybrid</option>
+        <option value="eOthers">Muut E-pyörät</option>
+      </select>
+      <select id="eMtb_menu" onchange="formSelection()">
         <option value="noSus">Täysjäykkä</option>
         <option value="frSus">Etujousto</option>
         <option value="fullSus">Täysjousto</option>

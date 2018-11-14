@@ -9,16 +9,16 @@ myFunction = () => {
 
   if (x === "mtb") {
     console.log("mtb");
-    //mtb dropdown menu
+    window.location = "http://127.0.0.1:5500/post_form.html";
   } else if (x === "roadbike") {
     console.log("tasamaapyörät");
-    //roadbike dropdown menu
+    window.location = "http://127.0.0.1:5500/roadbike_post_form.html";
   } else if (x === "basicBike") {
     console.log("peruspyörät");
-    //basicbike dropdown menu
+    window.location = "http://127.0.0.1:5500/basicbikse_post_form.html";
   } else if (x === "kidsBike") {
     console.log("lastenpyörät");
-    //kids bike dorpdown menu
+    window.location = "http://127.0.0.1:5500/kidsbikes_post_form.html";
   } else if (x === "eBike");
   //eBike dropdown menu
 };

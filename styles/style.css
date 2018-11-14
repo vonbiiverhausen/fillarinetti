@@ -91,6 +91,14 @@ li a:hover {
 }
 
 /* form styles */
+
+.menu_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  margin-left: 10px;
+}
+
 #form {
   width: 80%;
   box-sizing: border-box;
@@ -109,16 +117,7 @@ li a:hover {
 #form input:hover {
   background-color: #dddddd;
 }
-.wheelsize_menu {
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
-  width: 100%;
-  box-shadow: #dddddd;
-  text-align: center;
-}
-.bodySize_menu {
-  width: 100%;
+select {
   height: 30px;
   margin-top: 15px;
   width: 100%;
@@ -126,14 +125,9 @@ li a:hover {
   text-align: center;
 }
 #susTravel_menu {
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
-  width: 100%;
-  box-shadow: #dddddd;
-  text-align: center;
   visibility: hidden;
 }
+
 .upload_btn_wrapper {
   position: relative;
   overflow: hidden;
@@ -147,6 +141,8 @@ li a:hover {
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .upload_btn_wrapper input[type="file"] {
   font-size: 100px;
@@ -159,6 +155,12 @@ li a:hover {
 textarea {
   width: 100%;
 }
+/* Ebike form styles */
+
+#eMtb_menu {
+  visibility: hidden;
+}
+
 /* Footer syles*/
 .footer {
   left: 0;
@@ -212,4 +214,15 @@ textarea {
 #register_btn:hover {
   background-color: aliceblue;
   color: black;
+}
+/**********
+accurate searchForm styles
+**********/
+#biketype_menu {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: #dddddd;
+  text-align: center;
 }

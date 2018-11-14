@@ -36,55 +36,39 @@
 
     <div class="menu_container">
       <select id="mySelect" onchange="myFunction()">
-        <option value="mtb">Maastopyörä </option
+        <option value="basicBike">Peruspyörä </option
+        ><option value="mtb">Maastopyörä </option
         ><option value="roadbike">Tasamaapyörä </option
-        ><option value="basicBike">Peruspyörä </option
         ><option value="kidsBike">Lastenpyörä </option
         ><option value="eBike">Sähköpyörä </option></select
       >
 
       <select id="menu" onchange="formSelection()">
-        <option value="noSus">Täysjäykkä</option>
-        <option value="frSus">Etujousto</option>
-        <option value="fullSus">Täysjousto</option>
-        <option value="fatbike">Fatbike</option>
+        <option value="thriat">Yksivaihteinen</option>
+        <option value="road">Napavaihteinen</option>
+        <option value="cyclo">Ketjuvaihteinen</option>
       </select>
     </div>
     <div id="form">
       <form id="lomake" action="/action_page.php">
         <input type="text" name="brand" placeholder="Merkki" /> <br />
         <input type="number" name="prize" placeholder="Hinta" /> <br />
-        <select class="wheelsize_menu" name="wheelSize">
-          <option value="" disabled selected>Rengaskoko</option>
-          <option value="20">20"</option>
-          <option value="24">24"</option>
-          <option value="26">26"</option>
-          <option value="27.5">27.5"</option>
-          <option value="27.5+">27.5+"</option>
-          <option value="28">28"</option>
-          <option value="29+">29+"</option>
-          <option value="29">29"</option>
+        <select name="gender" id="gender">
+          <option value="male">Miehille</option>
+          <option value="female">Naisille</option>
+          <option value="unisex">Unisex</option>
         </select>
-        <br />
-        <select class="bodySize_menu" name="size" onchange="getBodysize()">
+        <select class="bodySize_menu" name="size">
           <option value="" disabled selected>Rungokoko</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <!-- Inch sizes -->
-          <option value="inc_s">15-16”</option>
-          <option value="inc_m">17-18”</option>
-          <option value="inc_l">19-20”</option>
-          <option value="inc_xl">21-22”</option>
-        </select>
-        <br />
-        <select id="susTravel_menu" name="susTravel" onchange="getSusTarvel()">
-          <option value="" disabled selected>Jousto</option>
-          <option value="xs">80-125mm</option>
-          <option value="s">130-155mm</option>
-          <option value="m">160-210mm</option>
+          <option value="male_18">18"</option>
+          <option value="male_20">20"</option>
+          <option value="male_22">22"</option>
+          <option value="male_24">24"</option>
+          <option value="" disabled>Naisten koot</option>
+          <option value="female_17">17"</option>
+          <option value="female_19">19"</option>
+          <option value="female_21">21"</option>
+          <option value="female_23">23"</option>
         </select>
         <br />
         <input type="text" name="location" placeholder="Paikkakunta" /> <br />
