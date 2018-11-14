@@ -224,12 +224,35 @@ textarea {
 }
 #radios_div{
     position: relative;
-    border: 5px solid red;
-    width: 100%;
-    height: 10%;
+    border: 1px solid red;
+    width: 45%;
     background: yellow;
 }
-#radios_div .htradio{
+#radios_div .formin_haku{
+    position: relative;
+    margin: 10px 0px 10px 4px;
     
+}
+.valitsemalli{
+    font-size: 10px;
+    
+}
+.valitsekoko{
+    font-size: 10px;
+
+}
+.kolmas{
+    font-size: 10px;
+}
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+    
+}
+        
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 1px;
+    padding: 20px;
     
 }
