@@ -1,0 +1,31 @@
+CREATE DATABASE fillarinetti;
+
+USE fillarinetti;
+
+CREATE TABLE ilmoitus(
+	ilmId int(11) AUTO_INCREMENT,
+	ilmJattaja varchar(50),
+	ilmJatetetty datetime,
+	ilmTila varchar(20),
+	hinta decimal(10,0),
+	tyyppi varchar(25),
+	alatyyppi varchar(25),
+	merkki varchar(25),
+	rengas_koko int(11),
+	runko_koko varchar(8),
+	paikkakunta varchar(25),
+	kuva varchar(25),
+	kuvaus varchar(2000),
+	PRIMARY KEY (ilmId),
+	FOREIGN KEY (ilmJattaja ) REFERENCES ilmoitus(username)
+);
+
+CREATE TABLE kayttaja(
+	username varchar(25),
+	password varchar(32),
+	sposti varchar(50),
+	puhnro varchar(10),
+	tunnusluotu timestamp,
+	viimkirjautunut timestamp,
+	PRIMARY KEY (username)
+);
