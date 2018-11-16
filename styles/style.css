@@ -160,7 +160,12 @@ textarea {
 #eMtb_menu {
   visibility: hidden;
 }
-
+#eBikeType {
+  color: blue;
+}
+#mySelect {
+  color: red;
+}
 /* Footer syles*/
 .footer {
   left: 0;
