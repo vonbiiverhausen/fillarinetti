@@ -8,7 +8,7 @@
     <title>Fillarinetti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -19,91 +19,44 @@
         </div>
     </div>
     <div class="tarkkahaku_div">
-            <div id="radios_div">
+        
             <div>
                 <h1>Tarkempi haku</h1>
             </div>
-                <div class="flex-container">
-                  
-                <div class="valitsemalli">
-                <h2>Valitse malli</h2>
-            
-        <form class="formin_haku" action="#" method="post" onsubmit=" return tarhaku()" onclick="hakuradio()" >
+                <div class="flex-container">           
+        
             <div>
-            <input type="radio" id="htradio" name="rad" value="maastopyora" /><a class="radiovalue">Maastopyörä</a>
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="maantiepyora" /><a class="radiovalue">Maantiepyörä</a> 
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="peruspoyra" /><a class="radiovalue">Peruspyörä</a> 
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="lastenpyora" /><a class="radiovalue">Lastenpyörä</a>
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="sahkopyora" /><a class="radiovalue">Sähköpyörä</a> 
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="hybridipyora" /><a class="radiovalue">Hybridipyörä</a> 
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="bmx" /><a class="radiovalue">BMX-pyörä</a> 
-        </div>
-        <div> 
-        <input type="radio" id="htradio" name="rad" value="retkipyora" /><a class="radiovalue">Retkipyörä</a> 
-        </div>
-        <div>
-            <input type="radio" id="htradio" name="rad" value="bmx" /><a class="radiovalue">BMX-pyörä</a> </div>
-    </form>
-            </div>
-                    <div class="valitsekoko">
-                <h2>Valitse koko</h2>
-                        <select name="selectkoko">
-                                <option id="optionskoko1">Täysjäykkä</option>
-                                <option id="optionskoko2">Etujousto</option>
-                                <option id="optionskoko3">Täysjousto</option>
-                                <option id="optionskoko4">Fatbike</option>                                
-                        </select>
-            </div>
-                <div class="kolmas">
-                <h2>Valitse kolmas</h2>
-            </div>
-                    <div class="neljas">
-                <h2>Valitse Neljäs</h2>
-            </div>
+            <select name="ths" id="rad" onchange="sfunction()">
+                                <option id="optionmalli0" value="vmallin">Valiste Mallin</option>
+                                <option id="optionmalli1" value="maastop">Maastopyörä</option>
+                                <option id="optionmalli2" value="maantiep">Maantiepyörä</option>
+                                <option id="optionmalli3" value="preusp">Peruspyörä</option>
+                                <option id="optionmalli4" value="lastenp">lastenpyörä</option>
+                                <option id="optionmalli5" value="sahkop">sähköpyörä</option>
+                                <option id="optionmalli6" value="hybrip">hybridipyörä</option>
+                                <option id="optionmalli7" value="bmxp">BMX-pyörä</option>
+                                <option id="optionmalli8" value="retkip">Retkipyörä</option>
+                </select>
+                <div id="bikeStyle">
+        <select name="RB_bike_style" id="sB_style">
+                <option value="ovalitsek">Valitse kokon</option>
+                <option value="otaysjaykka">Täysjäykkä</option>
+             <!--    <option value="oetujousto">Etujousto</option>
+               <option value="otaysjousto">Täysjousto</option>
+                <option value="ofatbaike">Fatbike</option>
+-->
+                </select>
+                <br>
+        <select name="RBbodyMaterial" id="bodyMat">
+                <option value="" disabled>Rungon materiaali</option>
+                <option value="alu">Alumiini</option>
+                <option value="carbon">Hiilikuitu</option>
+                </select>
+                <br>
+                </div>
                     </div>
         </div>
     </div>
 </body>
 </htlm>
-<script type="text/javascript">
-       function hakuradio(){
-           
-           var type = document.getElementsByName("rad");
-           
-           if(type[0].checked){
-               
-               if(document.getElementById("optionskoko1").value;){
-                document.getElementById("optionskoko1").value=="zxdxddd";
-                  }
-               
-           }else if (type[1].checked){
-               
-               
-           }else if (type[2].checked){
-               
-               
-           }else if (type[3].checked){
-               
-               
-           }else if (type[4].checked){
-               
-               
-           }else if (type[5].checked){
-               
-               
-           }else if (type[6].checked){
-           }
-       }
-</script>
+<script src="scripts/thscript.js"></script>

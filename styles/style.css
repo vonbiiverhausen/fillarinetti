@@ -166,7 +166,7 @@ textarea {
   background-color:rgba(255,255,255,0.1);
 }
 #body_backgound{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../testi_kuva4.jpg');
   height: 1700px;
   background-size: cover;
   background-position: center;
@@ -223,7 +223,6 @@ textarea {
     height: 500px;
 }
 #radios_div{
-    display: inline-table;
     border: 1px solid red;
     width: 50%;
     background: yellow;
@@ -245,7 +244,6 @@ textarea {
     font-size: 10px;
 }
 .flex-container{
-    display: flex;
     background-color: dodgerblue;
     
 }
