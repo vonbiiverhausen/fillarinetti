@@ -1,25 +1,25 @@
 K‰ytt‰j‰t
 
-GET /kayttaja
+GET /api/kayttaja
 - hakee kannasta kaikki k‰ytt‰j‰t listana.
 GET /kayttaja/:k‰ytt‰j‰tunnus
 - hakee kannasta yksitt‰isen k‰ytt‰j‰n tiedot
 
-POST /kayttaja
+POST /api/kayttaja
 - lis‰‰ k‰ytt‰j‰n tietokantaan. Edellytt‰‰ query -kent‰t: username, password, sposti, puhnro
 
-PUT /kayttaja/:k‰ytt‰j‰tunnus
+PUT /api/kayttaja/:k‰ytt‰j‰tunnus
 - p‰ivitt‰‰ k‰ytt‰j‰n s‰hkˆposti- ja puhelinnumerotiedot. Vaaditut query -kent‰t: sposti ja puhnro
 
-PUT /kayttaja/:k‰ytt‰j‰tunnus/salasana
+PUT /api/kayttaja/:k‰ytt‰j‰tunnus/salasana
 - p‰ivitt‰‰ k‰ytt‰j‰n salasanan. Vaatii query -kent‰n password
 
-DELETE /:k‰ytt‰j‰tunnus
+DELETE /api/:k‰ytt‰j‰tunnus
 - poistaa k‰ytt‰j‰tunnuksen kannasta
 
 Ilmoitukset
 
-POST /ilmoitukset
+POST /api/ilmoitukset
 - lis‰‰ ilmoituksen tietokantaan
 - Tarvittavat query -kent‰t:
 ilmJattaja,
@@ -35,14 +35,14 @@ paikkakunta,
 kuva,
 kuvaus
 
-GET /ilmoitukset
+GET /api/ilmoitukset
 - hakee kaikki ilmoitukset
 
-GET /ilmoitukset/:id
+GET /api/ilmoitukset/:id
 - hakee ilmoituksen id:ll‰
 
-DELETE /ilmoitukset/:id
+DELETE /api/ilmoitukset/:id
 - poistaa id:ll‰ olevan ilmoituksen
 
-GET /ilmoitukset/haku ** kesken **
+GET /api/ilmoitukset/haku ** kesken **
 - hakee hakuparametrien mukaiset ilmoitukset

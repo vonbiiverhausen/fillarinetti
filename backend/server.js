@@ -1,7 +1,20 @@
 // Kirjaston tuonti ja instanssin luonti
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const polku = require('path');
+
+// index
+app.use(express.static('public'));
+app.get('/', (req, res, next) => {
+    res.redirect('\index.html');
+});
+
+// CORS käyttöön
+app.use(cors());
+app.use(cors({
+    credentials: true
+}));
 
 // ilmoitukset-kirjaston tuonti
 const ilmoitukset = require('./ilmoitukset.js');
@@ -18,10 +31,5 @@ app.listen(portti, () => {
 const ilmoitusRouter = require('./routes/ilmoitus.js');
 const kayttajaRouter = require('./routes/kayttaja.js');
 
-app.use('/ilmoitukset', ilmoitusRouter);
-app.use('/kayttaja', kayttajaRouter);
-
-// Perus-get
-app.get('/', (req, res, next) => {
-    res.sendFile(polku.join(__dirname+'/testisivu.html'));
-});
+app.use('/api/ilmoitukset', ilmoitusRouter);
+app.use('/api/kayttaja', kayttajaRouter);
