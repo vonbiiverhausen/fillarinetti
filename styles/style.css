@@ -3,35 +3,90 @@
   margin: 0;
   padding: 0;
 }
+
 button {
   size: 50px;
-  border-radius: 5px;
+  border-radius: 5px solid;
   padding: 2px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(99, 92, 92);
+}
+
 /* Header styles */
 .header {
-  display: grid;
-  grid-template-columns: 20% 34% auto;
-  background-color: brown;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #06d641;
+}
+.header div {
+  width: 300px;
+  height: 200px;
+}
+p {
+  color: white;
 }
 #logo {
-  width: 100px;
+  width: 200px;
+  align-self: center;
 }
-#logo_container {
-  margin: 10px;
-}
-#logo_container button {
-  background-color: blue;
+#fillatnTXT {
+  margin-top: 50%;
   color: white;
-  float: right;
-  margin-top: 15%;
 }
+
 #login_register {
-  background-color: aqua;
+  align-items: center;
+  background-color: #06d641;
 }
 #leave_post_container {
-  vertical-align: middle;
+  position: relative;
+  background-color: #06d641;
+}
+#leave_post_btn {
+  color: white;
   background-color: red;
+  width: 45%;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#accurate_searchBtn {
+  width: 45%;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Quick search menubar styles*/
@@ -41,14 +96,91 @@ button {
 
 /* Accurate search styles */
 .accurate_search_btn_container {
-  background-color: pink;
-}
-/* Post container styles */
-.posts_container {
-  background-color: blueviolet;
+  background-color: white;
 }
 
+/* Post container styles */
+.posts_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+}
+.posts_container img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* form styles */
+
+.menu_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  margin-left: 10px;
+}
+form {
+  margin: 10px;
+}
+form input {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+select {
+  text-align-last: center;
+  padding-right: 29px;
+
+  height: 30px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: #dddddd;
+}
+
+.upload_btn_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+#lataa_kuva {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.upload_btn_wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+textarea {
+  width: 100%;
+}
+/* Ebike form styles */
+
+#eMtb_menu {
+  visibility: hidden;
+}
+#eBikeType {
+  color: blue;
+}
+#mySelect {
+  color: red;
+}
 /* Footer syles*/
 .footer {
-  background-color: chartreuse;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(162, 165, 159);
+  color: white;
+  text-align: center;
 }
