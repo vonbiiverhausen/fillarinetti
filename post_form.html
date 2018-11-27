@@ -1,88 +1,76 @@
-<!DOCUMENT <!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fillarinetti</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header"><h1>Jquery kaavake</h1></div>
 
-
-</head>
-
-<body>
-    <div class="header">
-        <div id="logo_container">
-
-            <img id="logo" src="fillarinetti_logo_1.png" alt="Logo">
-
-        </div>
-        <div id="leave_post_container">
-            <h1 id="leave_post_header">Jätä ilmoitus</h1>
-        </div>
-        <div id="login_register">
-
-        </div>
-    </div>
-    <div class="quick_search_links">
-        <div>
-            <ul>
-                <li><a href="#">Etusivulle</a></li>
-                <li><a href="#">Tarkka haku</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="form_instructions">
-        <h3>Valitse myytävän pyörän tyyppi</h3>
-    </div>
-
-    <div class="posts_container">
-        <select id="mySelect" onchange="myFunction()">
-            <option value="mtb">Maastopyörä
-            <option value="roadbike">Tasmaapyörä
-            <option value="basicBike">Peruspyörä
-            <option value="kidsBike">Lastenpyörä
-            <option value="eBike">Sähköpyörä
-        </select>
-        <select id="menu" onchange="formSelection()">
-            <option value="noSus">Täysjäykkä</option>
-            <option value="frSus">Etujousto</option>
-            <option value="fullSus">Täysjousto</option>
-            <option value="fatbike">Fatbike</option>
-        </select>
-
-    </div>
-    <div id="form">
-        <form id="lomake" action="/action_page.php">
-            <input type="text" name="brand" placeholder="Merkki">
+    <div id="kaavakkeePaikka">
+      <div id="kaavake">
+        <form action="action.html" method="GET">
+          <div id="upPart">
+            <div id="valikko">
+              <select name="mainValikko" id="menu" onchange="formfunction()">
+                <option value="rBike">Tasamaapyörä</option>
+                <option value="mtb">Maastopyörä</option>
+                <option value="bBike">Peruspyörä</option>
+                <option value="kidsBike">Lastenpyörä</option>
+                <option value="eBike">Sähköpyörä</option>
+                <option value="otherBike">Muu pyörä</option>
+              </select>
+              <br />
+              <input type="number" placeholder="Hinta" /> <br />
+              <input type="text" placeholder="Merkki" /> <br />
+              <input type="text" placeholder="Paikkakunta" />
+          </div>
+          <div id="bikeStyle">
+            <select name="RB_bike_style" id="RB_style">
+              <option value="rBike">Maantiepyörä</option>
+              <option value="timeAb">Aika-ajopyörä</option>
+              <option value="hybridB">Hybridpyörä</option>
+              <option value="cyclo">Cyclocross</option>
+                </select>
+                <br>
+            <select name="RBbodyMaterial" id="bodyMat">
+              <option value="" disabled>Rungon materiaali</option>
+              <option value="alu">Alumiini</option>
+              <option value="carbon">Hiilikuitu</option>
+            </select>
             <br>
-            <input type="number" name="prize" placeholder="Hinta">
-            <br>
-            <input type="number" name="wheelSize" placeholder="Rengas koko">
-            <br>
-            <input type="number" name="size" placeholder="Rungon koko">
-            <br>
-            <div class="upload_btn_wrapper">
-                <button id="lataa_kuva">Lisää kuva</button>
-                <input type="file" name="pic" accept="image/*" >
-            </div>
-            <br>
-            <textarea rows="20" >
-                
-                </textarea>
-            <br>
-            <input id="submitID" type="submit" value="Jätä ilmoitus">
+            <select name="RBbodysize" id="rbBSize">
+              <option value="" disabled selected>Rungon koko</option>
+              <option value="mtb_xs">XS</option>
+              <option value="mtb_s">S</option>
+              <option value="mtb_m">M</option>
+              <option value="mtb_l">L</option>
+              <option value="mtb_xl">XL</option>
+              <option value="" disabled>Tuuma koot</option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+            </select>
+          </div>
+          <div id="subMenu">
+          </div>
+          <div id="eBikesub"></div>
+          <div id="downPart">
+            <br />
+            <input type="file" /> <br />
+            <textarea name="freeText" id="" cols="30" rows="10" placeholder="Kirjoita tähän lisätietoja pyörästä"></textarea>
+            <br />
+            <br />
+            <button type="submit'">Jätä ilmoitus</button>
+          </div>
         </form>
-    </div>
-    <div class="footer">
-        <h1 id="fteksti">Sivustolla käytetään evästeitä, joilla voimme parantaa sivustoa ja käyttökokemustasi sekä kohdentaa markkinointiamme. Osa evästeistä on sivuston toiminnalle välttämättömiä. 
-        <br>Lue tietosuojaselosteestamme, miten käsittelemme evästeisiin liitettyjä tietoja. </h1>
-    <h2 id="fcopy"> Copyright @ 2018 Fillarinetti</h2>
+      </div>
     </div>
     <script src="scripts/form.js"></script>
-</body>
-
+  </body>
 </html>

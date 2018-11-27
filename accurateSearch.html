@@ -1,0 +1,81 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div id="logo_container">
+        <img id="logo" src="fillarinetti_logo_1.png" alt="Logo" />
+      </div>
+      <div id="leave_post_container">
+        <button id="leave_post_btn">Jätä ilmoitus</button>
+      </div>
+      <div id="login_register">
+        <form action="lol.php" method="post" onsubmit="return checkinputs()">
+          <input id="user_input" type="text" placeholder="Käyttäjätunnus" />
+          <input id="salasana_input" type="password" placeholder="Salasana" />
+          <button id="log_in_btn">Kirjaudu</button>
+        </form>
+        <form action="registeri.html">
+          <button id="register_indexbtn">Rekisteröidy</button>
+        </form>
+      </div>
+    </div>
+    <div class="quick_search_links"><div></div></div>
+
+    <div class="accurate_search_form_container">
+      ¨
+      <form action="">
+        <select name="Biketype" id="biketype_menu">
+          <option value="" disabled selected>Pyörälaji</option>
+          <option value="mtb">Maastopyörä</option>
+          <option value="rBike">Tasamaapyörä</option>
+          <option value="bBike">Peruspyörä</option>
+          <option value="cBike">Lastenpyörä</option>
+          <option value="eBike">Sähköpyörä</option>
+        </select>
+        <select name="MtbSizes" id="bikeSize">
+          <option value="" disabled selected>Pyöränkoko</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <!-- Inch sizes -->
+          <option value="" disabled>Tuuma koot</option>
+          <option value="inc_s">15-16”</option>
+          <option value="inc_m">17-18”</option>
+          <option value="inc_l">19-20”</option>
+          <option value="inc_xl">21-22”</option>
+        </select>
+        <select name="mtbType" id="mtbTypes">
+          <option value="" disabled selected>Jousitus</option>
+          <option value="nSus">Ei joustoa</option>
+          <option value="frSus">Etujousto</option>
+          <option value="fullSus">Täysjoustoa</option>
+          <option value="Fatbike">Fatbike</option>
+        </select>
+        <select id="susTravel_menu" name="susTravel" onchange="getSusTarvel()">
+          <option value="" disabled selected>Jousto</option>
+          <option value="xs">80-125mm</option>
+          <option value="s">130-155mm</option>
+          <option value="m">160-210mm</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="posts_container"></div>
+    <div class="footer"><h1>Tähän tulee footer</h1></div>
+    <script src=""></script>
+  </body>
+</html>
