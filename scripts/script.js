@@ -8,7 +8,10 @@ document.getElementById("logo").addEventListener("click", function() {
   console.log("testi");
 });
 document
-  .getElementById("accurate_search")
+  .getElementById("accurate_searchBtn")
   .addEventListener("click", function() {
     window.location = "http://127.0.0.1:5500/accurateSearch.html";
   });
+register = () => {
+  window.location = "http://127.0.0.1:5500/Registeri.html";
+};
