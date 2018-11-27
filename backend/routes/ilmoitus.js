@@ -1,9 +1,8 @@
-// Moduulien tuonto
+// Moduulien tuonti
 const express = require('express');
 const app = express();
-const polku = require('path');
+//const bodyParser = require('body-parser');
 const sql = require('mysql');
-//const ilmoitukset = require('../ilmoitukset.js');
 
 const yhteys = sql.createConnection(
     {
@@ -14,29 +13,20 @@ const yhteys = sql.createConnection(
     }
 );
 
+// Bodyparser käyttöön
+//app.use(bodyParser.json());
+
 // Routerin luonti
 const ilmoitusRouter = express.Router();
-app.use('/ilmoitukset', ilmoitusRouter);
+app.use('/api/ilmoitukset', ilmoitusRouter);
 
 // Lisää ilmoitus
 ilmoitusRouter.post('/', (req, res, next) => {
-    let ilmoitus = req.query;
-
+    console.log('lisää ilmoitus');
+    let ilmoitus = req.body;
+    console.log(req.body);
     yhteys.query(`
-    insert into ilmoitus (
-        ilmJattaja,
-        ilmJatetty,
-        ilmTila,
-        hinta,
-        tyyppi,
-        alatyyppi,
-        merkki,
-        rengas_koko,
-        runko_koko,
-        paikkakunta,
-        kuva,
-        kuvaus
-    ) values (?, now(), 'Myynnissä', ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    insert into ilmoitus (ilmJattaja, ilmJatetty, ilmTila, hinta, tyyppi, alatyyppi, merkki, rengas_koko, runko_koko, paikkakunta, kuva, kuvaus) values (?, now(), 'Myynnissä', ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
         ilmoitus.username,
         ilmoitus.hinta,
@@ -50,6 +40,7 @@ ilmoitusRouter.post('/', (req, res, next) => {
         ilmoitus.kuvaus
     ], (err, result, fields) => {
         if (err) {
+            console.log(err.message);
             res.send({"virhe": err.message});
         } else {
             res.send({"viesti": "ilmoitus lisätty"});

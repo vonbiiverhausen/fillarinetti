@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const sql = require('mysql');
+const crypto = require('crypto');
 
 // Tietokantayhteys
 const yhteys = sql.createConnection(
@@ -18,9 +19,17 @@ app.use('/kayttaja', kayttajaRouter);
 
 // Luo käyttäjätunnus / rekisteröi
 kayttajaRouter.post('/', (req, res, next) => {
-    let user = req.query;
-    yhteys.query("insert into kayttaja values (?, ?, ?, ?, now(), now())", [user.username, user.password, user.sposti, user.puhnro] , (err, result, fields) => {
+    let user = req.body;
+
+    // Hash password
+    let password = crypto
+        .createHash('sha256')
+        .update(user.password)
+        .digest('hex');
+
+    yhteys.query("insert into kayttaja values (?, ?, ?, ?, now(), now())", [user.username, password, user.sposti, user.puhnro] , (err, result, fields) => {
         if (err){
+            console.log(err.message);
             res.send({"virhe": err.message});
         } else {
             res.send({"viesti": "Käyttäjä "+user.username+" lisätty"});

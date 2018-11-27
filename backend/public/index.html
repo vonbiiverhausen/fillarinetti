@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fillarinetti - API-testausta</title>
+    <!-- Tyyli -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,17 +13,35 @@
 </head>
 
 <body>
-    <h2>Käyttäjät</h2>
-    <div id="kayttajat">
+    <header>
+        <h1>Proof of Concept</h1>
+    </header>
+    <h2>Ilmoitukset</h2>
+    <h3>Ilmoitusten listaus</h3>
+    <div id="ilmoitukset"></div>
+    <h3>Ilmoituksen lisääminen</h3>
+        Jättäjä: <input id="kayttaja" type="text">
+        Hinta: <input id="hinta" type="text">
+        Tyyppi: <input id="tyyppi" type="text">
+        Alatyyppi: <input id="alatyyppi" type="text">
+        Merkki: <input id="merkki" type="text">
+        Rengaskoko: <input id="rengaskoko" type="text">
+        Rungonkoko: <input id="rungonkoko" type="text">
+        Paikkakunta: <input id="paikkakunta" type="text">
+        Kuva: <input id="kuva" type="text">
+        Kuvaus: <input id="kuvaus" type="text">
+        <button id="lisaaIlm">Lisää ilmoitus</button>
 
-    </div>
-    <div>
+    <h2>Käyttäjät</h2>
+    <h3>Käyttäjälistaus</h3>
+    <div id="kayttajat"></div>
+    <hr />
+    <h3>Käyttäjän lisäys</h3>
         Käyttäjätunnus: <input id="username" type="text"><br />
         Salasana: <input id="password" type="text"><br />
         Sähköposti: <input id="sposti"><br />
         Puhelinnumero: <input id="puhnro"><br />
         <button id="luoTunnus">Luo tunnus</button>
-    </div>
 </body>
 
 </html>
