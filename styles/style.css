@@ -375,3 +375,19 @@ input{
 #haestyle:hover{
     background-color: deepskyblue;
 }
+@media screen and (max-width: 670px) {
+  .logotexti{
+    font-size: 100%;
+  }
+    .logotextii{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+  .logotexti{
+    font-size: 15px;
+  }
+    .logotextii{
+        font-size: 12px;
+    }
+}
