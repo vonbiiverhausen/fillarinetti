@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Fillarinetti</title>
-
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <div class="header">
       <div id="logo_container">
         <img id="logo" src="fillarinetti_logo_1.png" alt="Logo" />
@@ -18,8 +20,12 @@
         <button id="leave_post_btn">Jätä ilmoitus</button>
         <button id="accurate_searchBtn">Tarkka haku</button>
       </div>
-
-
+      <div id="logIn">
+        <input id="user_input" type="text" />
+        <input id="salasana_input" type="text" />
+        <button onclick="checkinputs()">Kirjaudu sisään</button>
+        <button onclick="register()">Rekisteröidy</button>
+      </div>
     </div>
     <div class="quick_search_links">
       <div>
@@ -43,39 +49,28 @@
     </div>
     <div class="footer"><h1>Tähän tulee footer</h1></div>
     <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+      function checkinputs() {
+        var user = document.getElementById("user_input").value;
+        var salasana = document.getElementById("salasana_input").value;
+        if (user != "" && user != null) {
+          document.getElementById("user_input").style.borderColor = "white";
+        } else {
+          alert(
+            "Käyttäjätunnus puuttuu jos et ole rekisteröitynyt, niin rekisteröidy"
+          );
+          document.getElementById("user_input").style.borderColor = "red";
 
-<<<<<<< HEAD
-
-
-
-
-</body>
-
+          return false;
+        }
+        if (salasana != "" && salasana != null) {
+          return true;
+        } else {
+          alert("Salasana puuttuu");
+          document.getElementById("salasana_input").style.borderColor = "red";
+          return false;
+        }
+      }
+    </script>
+  </body>
 </html>
-<!-- added javascript codes -->
-<script type="text/javascript" >
-    
-function checkinputs(){
-    var user = document.getElementById("user_input").value;
-    var salasana = document.getElementById("salasana_input").value;
-    if(user != '' && user != null){
-        document.getElementById('user_input').style.borderColor = "white";
-    }else{
-        alert("käyttäjä tunnus puuttuu jos et ole rekisteröitynyt, niin Rekisteröidy ");
-         document.getElementById('user_input').style.borderColor = "red";
-        
-        return false;
-    }
-    if(salasana != '' && salasana != null){
-        return true;
-    }else{
-        alert("Salasana puuttuu");
-        document.getElementById('salasana_input').style.borderColor = "red";
-        return false;
-    }
-}
- 
-</script>
-
-=======
->>>>>>> 64baf70d1638435d1fd35d8f09380cf1089fdf5e
