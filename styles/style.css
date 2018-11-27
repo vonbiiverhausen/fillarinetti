@@ -40,28 +40,53 @@ li a:hover {
 
 /* Header styles */
 .header {
-  display: grid;
-  grid-template-columns: 20% 34% auto;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #06d641;
 }
-#logo {
-  width: 100%;
+.header div {
+  width: 300px;
+  height: 200px;
 }
-#logo_container {
-  align-items: center;
-}
-#leave_post_btn {
-  background-color: blue;
+p {
   color: white;
 }
+#logo {
+  width: 200px;
+  align-self: center;
+}
+#fillatnTXT {
+  margin-top: 50%;
+  color: white;
+}
+
 #login_register {
   align-items: center;
   background-color: #06d641;
 }
 #leave_post_container {
-  align-items: center;
-  vertical-align: middle;
+  position: relative;
   background-color: #06d641;
+}
+#leave_post_btn {
+  color: white;
+  background-color: red;
+  width: 45%;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#accurate_searchBtn {
+  width: 45%;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Quick search menubar styles*/
@@ -71,14 +96,9 @@ li a:hover {
 
 /* Accurate search styles */
 .accurate_search_btn_container {
-  background-color: pink;
+  background-color: white;
 }
-#accurate_search {
-  margin: 20px;
-  width: 200px;
-  background-color: blue;
-  color: white;
-}
+
 /* Post container styles */
 .posts_container {
   display: grid;
@@ -109,6 +129,7 @@ form input {
 }
 select {
   text-align-last: center;
+  padding-right: 29px;
 
   height: 30px;
   margin-top: 15px;

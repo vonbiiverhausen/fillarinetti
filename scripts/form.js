@@ -693,7 +693,7 @@ formfunction = () => {
               }),
               $("<option>", {
                 value: "chop",
-                text: "Cohpperi"
+                text: "Chopperi"
               }),
               $("<option>", {
                 value: "foldB",
