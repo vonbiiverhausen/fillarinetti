@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<htlm>
+<html>
 <head>
     
     <meta charset="utf-8" />
@@ -14,49 +14,69 @@
     <div class="header">
         <div id="logo_container">
 
-            <img id="logo" src="fillarinetti_logo_1.png" alt="Logo">
+            <img id="logo" src="logot/fillarinetti_logo_1.png" alt="Logo">
             
         </div>
     </div>
-    <div class="tarkkahaku_div">
-        
-            <div>
-                <h1>Tarkempi haku</h1>
+    <div id="kaavakkeePaikka">
+    
+      <div id="kaavake">
+          <div id="upPart">
+              <form name="munfromi">
+              <select name="mainValikko" id="menu" onchange="formfunction()">
+                <option value="valitsemalli">Valitse Malli</option>
+                <option value="rBike">Tasamaapyörä</option>
+                <option value="mtb">Maastopyörä</option>
+                <option value="bBike">Peruspyörä</option>
+                <option value="kidsBike">Lastenpyörä</option>
+                <option value="eBike">Sähköpyörä</option>
+                <option value="otherBike">Muu pyörä</option>
+              </select>
+              <br />
+              <input type="number" placeholder="Hinta" /> <br />
+              <input type="text" placeholder="Merkki" /> <br />
+              <input type="text" placeholder="Paikkakunta" />
+         
+          <div id="bikeStyle">
+            <select name="RB_bike_style" id="RB_style">
+              <option value="">Valitse Tyyppi</option>
+              <option value="rBike">Maantiepyörä</option>
+              <option value="timeAb">Aika-ajopyörä</option>
+              <option value="hybridB">Hybridpyörä</option>
+              <option value="cyclo">Cyclocross</option>
+                </select>
+                <br>
+            <select name="RBbodyMaterial" id="bodyMat">
+              <option value="">Rungon materiaali</option>
+              <option value="alu">Alumiini</option>
+              <option value="carbon">Hiilikuitu</option>
+            </select>
+            <br>
+            <select name="RBbodysize" id="rbBSize">
+              <option value="" disabled selected>Rungon koko</option>
+              <option value="mtb_xs">XS</option>
+              <option value="mtb_s">S</option>
+              <option value="mtb_m">M</option>
+              <option value="mtb_l">L</option>
+              <option value="mtb_xl">XL</option>
+              <option value="" disabled>Tuuma koot</option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+              <option value="inch_xs"></option>
+            </select>
+          </div>
+          <div id="subMenu">
+          </div>
+          <div id="eBikesub"></div>
+          <div id="downPart"> </div>
+            <br/>
+            <button type="submit" id="haestyle" onclick="check(); return false">Hae</button>
+              </form>
+                  </div>
             </div>
-                <div class="flex-container">           
-        
-            <div>
-            <select name="ths" id="rad" onchange="sfunction()">
-                                <option id="optionmalli0" value="vmallin">Valiste Mallin</option>
-                                <option id="optionmalli1" value="maastop">Maastopyörä</option>
-                                <option id="optionmalli2" value="maantiep">Maantiepyörä</option>
-                                <option id="optionmalli3" value="preusp">Peruspyörä</option>
-                                <option id="optionmalli4" value="lastenp">lastenpyörä</option>
-                                <option id="optionmalli5" value="sahkop">sähköpyörä</option>
-                                <option id="optionmalli6" value="hybrip">hybridipyörä</option>
-                                <option id="optionmalli7" value="bmxp">BMX-pyörä</option>
-                                <option id="optionmalli8" value="retkip">Retkipyörä</option>
-                </select>
-                <div id="bikeStyle">
-        <select name="RB_bike_style" id="sB_style">
-                <option value="ovalitsek">Valitse kokon</option>
-                <option value="otaysjaykka">Täysjäykkä</option>
-             <!--    <option value="oetujousto">Etujousto</option>
-               <option value="otaysjousto">Täysjousto</option>
-                <option value="ofatbaike">Fatbike</option>
--->
-                </select>
-                <br>
-        <select name="RBbodyMaterial" id="bodyMat">
-                <option value="" disabled>Rungon materiaali</option>
-                <option value="alu">Alumiini</option>
-                <option value="carbon">Hiilikuitu</option>
-                </select>
-                <br>
-                </div>
-                    </div>
-        </div>
     </div>
 </body>
-</htlm>
+</html>
 <script src="scripts/thscript.js"></script>
+<script>

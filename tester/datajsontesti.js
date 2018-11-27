@@ -1,0 +1,20 @@
+{  
+   "pyörät":{  
+      "maastopyörä":{  
+         "täysjousto":"",
+         "etujousto":"",
+         "jäykkä":""
+      },
+      "maantiepyörä":{  
+         "1":"",
+         "2":"",
+         "3":"",
+         "4":""
+      },
+      "lastenpyörä":{  
+         "tyttöjen":"",
+         "poikien":""
+      }
+   }
+}
+//Data.Json
