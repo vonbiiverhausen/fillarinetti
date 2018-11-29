@@ -131,7 +131,6 @@ li a:hover {
 #leave_post_container {
   align-items: center;
   vertical-align: middle;
-  background-color: #14c145;
   padding: 10px 0px 0px 0px;
   margin-left: 15px;
   margin-right: 11px;
@@ -362,6 +361,8 @@ h12{
   position: absolute;
   top: 500px;
   left: 50%;
+  padding: 10px;
+  margin-bottom: 50px;
   margin-top: -150px;
   margin-left: -150px;
   width: 300px;
@@ -379,7 +380,7 @@ h12{
 }
 .header_register{
     display: grid;
-    grid-template-columns: 20% 34% auto;
+    grid-template-columns: 35% 35% 300px;
     background-color: #06d641;
     font-size: 20px;
 }
@@ -407,7 +408,15 @@ h12{
   background-color: aliceblue;
   color: black;
 }
-
+.div_tyhja_vali{
+    position: absolute;
+    top: 900px;
+    padding: 0px 1303px 0px 0px;
+    width: 1000px;
+    height: 30px;
+    border: 5px solid red;
+}
+/**/
 
 .dkuvat{
     border: 2px solid red;
