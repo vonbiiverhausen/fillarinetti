@@ -20,6 +20,7 @@
     <h3>Ilmoitusten listaus</h3>
     <div id="ilmoitukset"></div>
     <h3>Ilmoituksen lisääminen</h3>
+    <form id="addPost">
         Jättäjä: <input id="kayttaja" type="text">
         Hinta: <input id="hinta" type="text">
         Tyyppi: <input id="tyyppi" type="text">
@@ -31,17 +32,20 @@
         Kuva: <input id="kuva" type="text">
         Kuvaus: <input id="kuvaus" type="text">
         <button id="lisaaIlm">Lisää ilmoitus</button>
+    </form>
 
     <h2>Käyttäjät</h2>
     <h3>Käyttäjälistaus</h3>
     <div id="kayttajat"></div>
     <hr />
     <h3>Käyttäjän lisäys</h3>
+    <form id="addUser" method="POST" action="/api/kayttaja">
         Käyttäjätunnus: <input id="username" type="text"><br />
         Salasana: <input id="password" type="text"><br />
         Sähköposti: <input id="sposti"><br />
         Puhelinnumero: <input id="puhnro"><br />
         <button id="luoTunnus">Luo tunnus</button>
+    </form>
 </body>
 
 </html>

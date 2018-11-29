@@ -22,7 +22,7 @@ CREATE TABLE ilmoitus(
 
 CREATE TABLE kayttaja(
 	username varchar(25),
-	password varchar(32),
+	password varchar(64),
 	sposti varchar(50),
 	puhnro varchar(10),
 	tunnusluotu timestamp,

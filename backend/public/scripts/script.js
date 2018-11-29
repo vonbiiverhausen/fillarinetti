@@ -35,7 +35,7 @@ $(document).ready(function () {
     // Hae käyttäjät
     $.ajax({
         type: "GET",
-        url: "/api/kayttaja",
+        url: "/api/kayttaja/",
         success: function (result, status, xhr) {
             result.forEach(tulos => {
                 //console.log(tulos);
@@ -44,7 +44,10 @@ $(document).ready(function () {
         }
     });
 
-    $("#lisaaIlm").click(function () {
+
+    $("#addPost").submit(function (event) {
+        event.preventDefault();
+
         let ilmData = {
             "username": $("#kayttaja").val(),
             "hinta": $("#hinta").val(),
@@ -61,7 +64,9 @@ $(document).ready(function () {
         teePostKutsu("/api/ilmoitukset", JSON.stringify(ilmData));
     });
 
-    $("#luoTunnus").click(function () {
+    $("#addUser").submit(function(event) {
+        event.preventDefault();
+
         let userdata = {
             username: $("#username").val(),
             password: $("#password").val(),
@@ -81,9 +86,11 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             success: function (data, status) {
                 alert(data.viesti);
+                location.reload(true);
             },
-            error: function(data) {
-                alert(data.virhe);
+            error: function(xhr, status, error) {
+                let virhe = JSON.parse(xhr.responseText);
+                alert(virhe.virhe);
             }
         });
     }

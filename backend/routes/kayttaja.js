@@ -29,8 +29,11 @@ kayttajaRouter.post('/', (req, res, next) => {
 
     yhteys.query("insert into kayttaja values (?, ?, ?, ?, now(), now())", [user.username, password, user.sposti, user.puhnro] , (err, result, fields) => {
         if (err){
-            console.log(err.message);
-            res.send({"virhe": err.message});
+            if (err.code === "ER_DUP_ENTRY") {
+                res.status(500).send({"virhe": "Käyttäjä löytyy jo rekisteristä"});
+            } else {
+                res.status(500).send({"virhe": err.code});
+            }
         } else {
             res.send({"viesti": "Käyttäjä "+user.username+" lisätty"});
         }
