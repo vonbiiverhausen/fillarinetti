@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Fillarinetti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
@@ -107,6 +106,7 @@
       <h4>Maastopyörät</h4>
       <p>Lorem ipsum dolor..</p>
          <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
+
     </div>
   </div>
             
@@ -165,7 +165,18 @@
     <h2 id="footer_copyright"> Copyright @ 2018 Fillarinetti</h2> 
     </div>
 </body>
-
+          return false;
+        }
+        if (salasana != "" && salasana != null) {
+          return true;
+        } else {
+          alert("Salasana puuttuu");
+          document.getElementById("salasana_input").style.borderColor = "red";
+          return false;
+        }
+      }
+    </script>
+  </body>
 </html>
 <script type="text/javascript" >
     
