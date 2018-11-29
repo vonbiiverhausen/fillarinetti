@@ -165,6 +165,18 @@
     <h2 id="footer_copyright"> Copyright @ 2018 Fillarinetti</h2> 
     </div>
 </body>
+  </html>
+<script type="text/javascript" >
+    
+function checkinputs(){
+    var user = document.getElementById("user_input").value;
+    var salasana = document.getElementById("salasana_input").value;
+    if(user != '' && user != null){
+        document.getElementById('user_input').style.borderColor = "white";
+    }else{
+        alert("käyttäjä tunnus puuttuu jos et ole rekisteröitynyt, niin Rekisteröidy ");
+         document.getElementById('user_input').style.borderColor = "red";
+        
           return false;
         }
         if (salasana != "" && salasana != null) {
