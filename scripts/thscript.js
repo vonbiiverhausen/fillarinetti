@@ -229,16 +229,16 @@ ebikeHybridSize = () => {
           name: "eBike_style"
         }).append(
           $("<option>", {
+            value: "",
+            text: "Valitse koko"
+          }),
+               $("<option>", {
             value: "e_hybrid_s",
             text: "S"
           }),
           $("<option>", {
             value: "e_hybrid_s",
             text: "M"
-          }),
-          $("<option>", {
-            value: "e_hybrid_l",
-            text: "L"
           }),
           $("<option>", {
             value: "e_hybrid_l",
@@ -264,6 +264,12 @@ formfunction = () => {
 
   switch (value) {
     //creates submenus for mountainbikes
+    case "valitsemalli":
+     $(document).ready(function() {
+   
+     });        
+                clearEsubMenu();
+                clearSubmenu();
     case "mtb":
       console.log("Se on maastopyörä");
       $(document).ready(function() {
@@ -278,6 +284,10 @@ formfunction = () => {
               onchange: "nextmenu()"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse jousitus"
+              }),
+                $("<option>", {
                 value: "noSus",
                 text: "Ei joustoa"
               }),
@@ -300,6 +310,10 @@ formfunction = () => {
               name: "mtbWheelSize"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse vannekoko"
+              }),
+                $("<option>", {
                 value: "mtb26",
                 text: '26"'
               }),
@@ -314,10 +328,6 @@ formfunction = () => {
               $("<option>", {
                 value: "mtb29",
                 text: '29"+'
-              }),
-              $("<option>", {
-                value: "mtbWother",
-                text: "Muu koko"
               })
             ),
             $("<br>"),
@@ -326,6 +336,10 @@ formfunction = () => {
               name: "mtbBodySize"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse runkokoko"
+              }),
+                $("<option>", {
                 value: "mtb_xs",
                 text: "XS"
               }),
@@ -371,7 +385,7 @@ formfunction = () => {
               }),
               $("<option>", {
                 value: "mtb_20",
-                text: '21" tai isompi'
+                text: '21"'
               })
             )
           )
@@ -393,6 +407,9 @@ formfunction = () => {
               name: "RB_style"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse tyyppi"
+              }),$("<option>", {
                 value: "rBike",
                 text: "Maantiepyörä"
               }),
@@ -415,6 +432,9 @@ formfunction = () => {
               name: "RBbodyMaterial"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Rungon materiaali"
+              }),$("<option>", {
                 value: "alu",
                 text: "Alumiiini"
               }),
@@ -429,6 +449,9 @@ formfunction = () => {
               name: "RBbodysize"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse koko"
+              }),$("<option>", {
                 value: "rb_47",
                 text: "47cm"
               }),
@@ -516,6 +539,10 @@ formfunction = () => {
               name: "bB_style"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Peruspyörät"
+              }),
+                $("<option>", {
                 value: "singleG",
                 text: "Yksivaihteinen"
               }),
@@ -535,6 +562,10 @@ formfunction = () => {
               name: "BB_gender"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse tyyppi"
+              }),
+                $("<option>", {
                 value: "female",
                 text: "Naistepyörä"
               }),
@@ -575,6 +606,10 @@ formfunction = () => {
               id: "kB_style",
               name: "kB_style"
             }).append(
+                $("<option>", {
+                value: "",
+                text: "Valitse Tyyppi"
+              }),
               $("<option>", {
                 value: "KickB",
                 text: "Potkupyörä"
@@ -582,10 +617,6 @@ formfunction = () => {
               $("<option>", {
                 value: "BasicKbike",
                 text: "Normipyörä"
-              }),
-              $("<option>", {
-                value: "otherKbike",
-                text: "Muu lastenpyörä"
               })
             ),
             $("<br>"),
@@ -594,6 +625,10 @@ formfunction = () => {
               name: "kids_sizes"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse koko"
+              }),
+                 $("<option>", {
                 value: "kids_12",
                 text: '12"'
               }),
@@ -634,17 +669,16 @@ formfunction = () => {
               onchange: "ebikeFunction()"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse tyyppi"
+              }),
+                  $("<option>", {
                 value: "eBike",
                 text: "Hybrid Sähköpyörä"
               }),
               $("<option>", {
                 value: "eMtb",
                 text: "Sähkömaastopyörä"
-              }),
-
-              $("<option>", {
-                value: "otherEbike",
-                text: "Muu sähköpyörä"
               })
             )
           )
@@ -664,12 +698,12 @@ formfunction = () => {
               name: "oBike_style"
             }).append(
               $("<option>", {
+                value: "",
+                text: "Valitse tyyppi"
+              }),
+                  $("<option>", {
                 value: "bmx",
                 text: "BMX"
-              }),
-              $("<option>", {
-                value: "fix",
-                text: "Fiksi"
               }),
               $("<option>", {
                 value: "dirt",
@@ -693,8 +727,7 @@ formfunction = () => {
               }),
               $("<option>", {
                 value: "chop",
-                text: "Chopperi"
-
+                text: "Cohpperi"
               }),
               $("<option>", {
                 value: "foldB",

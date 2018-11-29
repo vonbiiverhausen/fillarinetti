@@ -1,23 +1,30 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="header"><h1>Jquery kaavake</h1></div>
 
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fillarinetti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div id="logo_container">
+
+            <img id="logo" src="logot/fillarinetti_logo_1.png" alt="Logo">
+            
+        </div>
+    </div>
     <div id="kaavakkeePaikka">
+    
       <div id="kaavake">
-        <form action="action.html" method="GET">
           <div id="upPart">
-            <div id="valikko">
+              <form name="munfromi">
               <select name="mainValikko" id="menu" onchange="formfunction()">
+                <option value="valitsemalli">Valitse Malli</option>
                 <option value="rBike">Tasamaapyörä</option>
                 <option value="mtb">Maastopyörä</option>
                 <option value="bBike">Peruspyörä</option>
@@ -29,9 +36,10 @@
               <input type="number" placeholder="Hinta" /> <br />
               <input type="text" placeholder="Merkki" /> <br />
               <input type="text" placeholder="Paikkakunta" />
-          </div>
+         
           <div id="bikeStyle">
             <select name="RB_bike_style" id="RB_style">
+              <option value="">Valitse Tyyppi</option>
               <option value="rBike">Maantiepyörä</option>
               <option value="timeAb">Aika-ajopyörä</option>
               <option value="hybridB">Hybridpyörä</option>
@@ -39,7 +47,7 @@
                 </select>
                 <br>
             <select name="RBbodyMaterial" id="bodyMat">
-              <option value="" disabled>Rungon materiaali</option>
+              <option value="">Rungon materiaali</option>
               <option value="alu">Alumiini</option>
               <option value="carbon">Hiilikuitu</option>
             </select>
@@ -61,18 +69,14 @@
           <div id="subMenu">
           </div>
           <div id="eBikesub"></div>
-          <div id="downPart">
-            <br />
-            <input type="file" /> <br />
-            <textarea name="freeText" id="" cols="30" rows="10" placeholder="Kirjoita tähän lisätietoja pyörästä"></textarea>
-            <br />
-            <br />
-            <button type="submit'">Jätä ilmoitus</button>
-          </div>
+          <div id="downPart"> </div>
+            <br/>
+            <button type="submit" id="haestyle" onclick="check(); return false">Hae</button>
+              </form>
+                  </div>
             </div>
-        </form>
-      </div>
     </div>
-    <script src="scripts/form.js"></script>
-  </body>
+</body>
 </html>
+<script src="scripts/thscript.js"></script>
+<script>
