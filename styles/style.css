@@ -99,6 +99,35 @@ li a:hover {
   align-items: center;
   background-color: #14c145;
 }
+/* tietosuojastyle here! */
+.tietosuoja_laatikko {
+    max-width: 900px;
+    margin: 100px auto;
+    background-color: white;
+    height: 800px;
+    border: groove #77fa77 15px;
+    
+    
+    
+}
+
+.otsikko {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.btekstit{
+    font-size: 17px;
+    font-family: arial;
+}
+
+.tekstit5 {
+    margin: 0px 15px 0px 15px;
+
+}
+
+/**/
 #leave_post_container {
   align-items: center;
   vertical-align: middle;
@@ -235,14 +264,15 @@ h12{
   grid-template-columns: auto auto auto;
   background-color: white;
   margin-left: 10px;
+
 }
-form input {
+ form .selectstyle  {
   text-align: center;
   width: 100%;
   height: 30px;
   margin-top: 10px;
 }
-select {
+.selectstyle {
   text-align-last: center;
   padding-right: 29px;
 
@@ -268,7 +298,7 @@ select {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.upload_btn_wrapper input[type="file"] {
+.upload_btn_wrapper .inputstyle[type="file"] {
   font-size: 100px;
   position: absolute;
   left: 0;
@@ -276,7 +306,7 @@ select {
   opacity: 0;
 }
 
-textarea {
+.textareastyle {
   width: 100%;
 }
 /* Ebike form styles */
@@ -443,7 +473,8 @@ textarea {
 /**********
 accurate searchForm styles
 **********/
-select{
+.selectstyle{
+    
   width: 100%;
   height: 30px;
   margin-top: 15px;
@@ -451,7 +482,7 @@ select{
   box-shadow: #dddddd;
   text-align-last: center;
 }
-input{
+.inputstyle{
   width: 100%;
   height: 30px;
   margin-top: 15px;

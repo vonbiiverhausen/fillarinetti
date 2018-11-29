@@ -23,7 +23,7 @@
       <div id="kaavake">
           <div id="upPart">
               <form name="munfromi">
-              <select name="mainValikko" id="menu" onchange="formfunction()">
+              <select class="selectstyle" name="mainValikko" id="menu" onchange="formfunction()">
                 <option value="valitsemalli">Valitse Malli</option>
                 <option value="rBike">Tasamaapyörä</option>
                 <option value="mtb">Maastopyörä</option>
@@ -33,12 +33,12 @@
                 <option value="otherBike">Muu pyörä</option>
               </select>
               <br />
-              <input type="number" placeholder="Hinta" /> <br />
-              <input type="text" placeholder="Merkki" /> <br />
-              <input type="text" placeholder="Paikkakunta" />
+              <input class="inputstyle" type="number" placeholder="Hinta" /> <br />
+              <input class="inputstyle" type="text" placeholder="Merkki" /> <br />
+              <input class="inputstyle" type="text" placeholder="Paikkakunta" />
          
           <div id="bikeStyle">
-            <select name="RB_bike_style" id="RB_style">
+            <select class="selectstyle" name="RB_bike_style" id="RB_style">
               <option value="">Valitse Tyyppi</option>
               <option value="rBike">Maantiepyörä</option>
               <option value="timeAb">Aika-ajopyörä</option>
@@ -46,13 +46,13 @@
               <option value="cyclo">Cyclocross</option>
                 </select>
                 <br>
-            <select name="RBbodyMaterial" id="bodyMat">
+            <select class="selectstyle" name="RBbodyMaterial" id="bodyMat">
               <option value="">Rungon materiaali</option>
               <option value="alu">Alumiini</option>
               <option value="carbon">Hiilikuitu</option>
             </select>
             <br>
-            <select name="RBbodysize" id="rbBSize">
+            <select class="selectstyle" name="RBbodysize" id="rbBSize">
               <option value="" disabled selected>Rungon koko</option>
               <option value="mtb_xs">XS</option>
               <option value="mtb_s">S</option>

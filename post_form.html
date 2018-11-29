@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +16,7 @@
         <form action="action.html" method="GET">
           <div id="upPart">
             <div id="valikko">
-              <select name="mainValikko" id="menu" onchange="formfunction()">
+              <select class="selectstyle" name="mainValikko" id="menu" onchange="formfunction()">
                 <option value="rBike">Tasamaapyörä</option>
                 <option value="mtb">Maastopyörä</option>
                 <option value="bBike">Peruspyörä</option>
@@ -26,25 +25,25 @@
                 <option value="otherBike">Muu pyörä</option>
               </select>
               <br />
-              <input type="number" placeholder="Hinta" /> <br />
-              <input type="text" placeholder="Merkki" /> <br />
-              <input type="text" placeholder="Paikkakunta" />
+              <input class="inputstyle" type="number" placeholder="Hinta" /> <br />
+              <input class="inputstyle" type="text" placeholder="Merkki" /> <br />
+              <input class="inputstyle" type="text" placeholder="Paikkakunta" />
           </div>
           <div id="bikeStyle">
-            <select name="RB_bike_style" id="RB_style">
+            <select class="selectstyle" name="RB_bike_style" id="RB_style">
               <option value="rBike">Maantiepyörä</option>
               <option value="timeAb">Aika-ajopyörä</option>
               <option value="hybridB">Hybridpyörä</option>
               <option value="cyclo">Cyclocross</option>
                 </select>
                 <br>
-            <select name="RBbodyMaterial" id="bodyMat">
+            <select class="selectstyle" name="RBbodyMaterial" id="bodyMat">
               <option value="" disabled>Rungon materiaali</option>
               <option value="alu">Alumiini</option>
               <option value="carbon">Hiilikuitu</option>
             </select>
             <br>
-            <select name="RBbodysize" id="rbBSize">
+            <select class="selectstyle" name="RBbodysize" id="rbBSize">
               <option value="" disabled selected>Rungon koko</option>
               <option value="mtb_xs">XS</option>
               <option value="mtb_s">S</option>
@@ -64,7 +63,7 @@
           <div id="downPart">
             <br />
             <input type="file" /> <br />
-            <textarea name="freeText" id="" cols="30" rows="10" placeholder="Kirjoita tähän lisätietoja pyörästä"></textarea>
+            <textarea class="textareastyle" name="freeText" id="" cols="30" rows="10" placeholder="Kirjoita tähän lisätietoja pyörästä"></textarea>
             <br />
             <br />
             <button type="submit'">Jätä ilmoitus</button>
