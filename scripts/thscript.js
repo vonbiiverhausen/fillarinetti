@@ -12,6 +12,7 @@ nextmenu = () => {
           id: "subMenu"
         }).append(
           $("<select/>", {
+              class: "selectstyle",
             id: "mtbS",
             name: "mtbStyle"
           }).append(
@@ -47,6 +48,7 @@ eBikeSusTravel = () => {
           id: "eBikesub"
         }).append(
           $("<select/>", {
+              class: "selectstyle",
             id: "EmtbSusT",
             name: "eMTBsusTravel"
           }).append(
@@ -88,6 +90,7 @@ ebikeFunction = () => {
           id: "subMenu"
         }).append(
           $("<select/>", {
+              class: "selectstyle",
             id: "EmtbS",
             name: "e_mtbStyle",
             onchange: "eBikeSusTravel()"
@@ -111,6 +114,7 @@ ebikeFunction = () => {
           ),
           $("<br>"),
           $("<select/>", {
+              class: "selectstyle",
             id: "EmtbWsize",
             name: "EmtbWsize"
           }).append(
@@ -137,6 +141,7 @@ ebikeFunction = () => {
           ),
 
           $("<select>", {
+              class: "selectstyle",
             id: "mtbBsize",
             name: "mtbBodySize"
           }).append(
@@ -225,6 +230,7 @@ ebikeHybridSize = () => {
         id: "subMenu"
       }).append(
         $("<select/>", {
+          class: "selectstyle",
           id: "eBike_style",
           name: "eBike_style"
         }).append(
@@ -279,6 +285,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "mtb_style",
               name: "mtbStyle",
               onchange: "nextmenu()"
@@ -306,6 +313,7 @@ formfunction = () => {
             ),
             $("<br>"),
             $("<select/>", {
+              class: "selectstyle",
               id: "mtb_w_size",
               name: "mtbWheelSize"
             }).append(
@@ -332,6 +340,7 @@ formfunction = () => {
             ),
             $("<br>"),
             $("<select>", {
+              class: "selectstyle",
               id: "mtbBsize",
               name: "mtbBodySize"
             }).append(
@@ -403,6 +412,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "rBike_style",
               name: "RB_style"
             }).append(
@@ -428,6 +438,7 @@ formfunction = () => {
             ),
             $("<br>"),
             $("<select/>", {
+              class: "selectstyle",
               id: "bodyMat",
               name: "RBbodyMaterial"
             }).append(
@@ -445,6 +456,7 @@ formfunction = () => {
             ),
             $("<br>"),
             $("<select/>", {
+              class: "selectstyle",
               id: "rbBSize",
               name: "RBbodysize"
             }).append(
@@ -535,6 +547,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "bB_style",
               name: "bB_style"
             }).append(
@@ -558,6 +571,7 @@ formfunction = () => {
 
             $("<br>"),
             $("<select/>", {
+              class: "selectstyle",
               id: "gender",
               name: "BB_gender"
             }).append(
@@ -575,6 +589,7 @@ formfunction = () => {
               }),
 
               $("<select/>", {
+                class: "selectstyle",
                 id: "female_size",
                 name: "fem_size"
               }).append(
@@ -603,6 +618,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "kB_style",
               name: "kB_style"
             }).append(
@@ -621,6 +637,7 @@ formfunction = () => {
             ),
             $("<br>"),
             $("<select/>", {
+              class: "selectstyle",
               id: "kidsSizes",
               name: "kids_sizes"
             }).append(
@@ -664,6 +681,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "eBike_style",
               name: "eBike_style",
               onchange: "ebikeFunction()"
@@ -694,6 +712,7 @@ formfunction = () => {
             id: "bikeStyle"
           }).append(
             $("<select/>", {
+              class: "selectstyle",
               id: "oBike_style",
               name: "oBike_style"
             }).append(

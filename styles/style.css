@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-index_body{
+#index_body{
     background-image: url(../imgs/newbackground.png);
     padding: 0px 10px 0px 10px;
     font-family: Arial;
@@ -94,10 +94,40 @@ li a:hover {
     background-color: #14c145;
   align-items: center;
 }
+
 #login_register {
   align-items: center;
   background-color: #14c145;
 }
+/* tietosuojastyle here! */
+.tietosuoja_laatikko {
+    max-width: 900px;
+    margin: 100px auto;
+    background-color: white;
+    height: 800px;
+    border: groove #77fa77 15px;
+    
+    
+    
+}
+
+.otsikko {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.btekstit{
+    font-size: 17px;
+    font-family: arial;
+}
+
+.tekstit5 {
+    margin: 0px 15px 0px 15px;
+
+}
+
+/**/
 #leave_post_container {
   align-items: center;
   vertical-align: middle;
@@ -107,16 +137,19 @@ li a:hover {
   margin-right: 11px;
 }
 .logotyhjatext{
-    
+    margin-top: 15px;
+    padding: 0px 0px 0px 10px;
+    height: 40px;
+    width: 100%;
 }
 .logotexti{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     word-break: break-all;
     text-align: center;
 }
 .logotextii{
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     word-break: break-all;
     text-align: center;
@@ -154,7 +187,6 @@ li a:hover {
   color: white;
 }
 #log_in_btn:hover{
-
     background-color: deepskyblue;
 }
 #register_indexbtn{
@@ -180,6 +212,14 @@ li a:hover {
 h4{
     font-size: 15px;
 }
+/* the register text style  */
+h12{
+    width: 100%;
+    font-family: Lucida Console;
+    font-size: 30px;
+    
+    
+}
 #accurate_search {
     float: left;
     margin: 20px;
@@ -201,14 +241,15 @@ h4{
     cursor: pointer;
 }
 #leave_post_btn:hover{
-    background: black;
+    background-color: black;
     border: 2px solid red;
     color: aliceblue;
 }
+
 /* Post container styles */
 .posts_container {
   display: grid;
-  grid-template-columns: 33% 34% auto;
+  grid-template-columns: auto auto auto;
   background-color: white;
 }
 .posts_container img {
@@ -217,24 +258,30 @@ h4{
 }
 
 /* form styles */
-#form {
-  width: 80%;
-  box-sizing: border-box;
+
+.menu_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
   background-color: white;
-  margin: auto;
-  width: 100%;
-  padding: 10px;
+  margin-left: 10px;
+
 }
-#form input {
+ form .selectstyle  {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+.selectstyle {
+  text-align-last: center;
+  padding-right: 29px;
+
   height: 30px;
   margin-top: 15px;
   width: 100%;
   box-shadow: #dddddd;
-  text-align: center;
 }
-#form input:hover {
-  background-color: #dddddd;
-}
+
 .upload_btn_wrapper {
   position: relative;
   overflow: hidden;
@@ -248,8 +295,10 @@ h4{
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.upload_btn_wrapper input[type="file"] {
+.upload_btn_wrapper .inputstyle[type="file"] {
   font-size: 100px;
   position: absolute;
   left: 0;
@@ -257,8 +306,19 @@ h4{
   opacity: 0;
 }
 
-textarea {
+.textareastyle {
   width: 100%;
+}
+/* Ebike form styles */
+
+#eMtb_menu {
+  visibility: hidden;
+}
+#eBikeType {
+  color: blue;
+}
+#mySelect {
+  color: red;
 }
 /* Footer syles*/
 #footer {
@@ -288,6 +348,7 @@ textarea {
     font-size: 14px;
 }
 
+
 /* register.html styles */
 #logo_container1{
     width: 100%;
@@ -304,9 +365,10 @@ textarea {
   margin-top: -150px;
   margin-left: -150px;
   width: 300px;
-  height: 450px;
+  height: 500px;    
+  text-align: center;
   background-color: darkred;
-  border: 2px solid yellow;
+  border: groove yellow 15px;
   background-color:rgba(255,255,255,0.1);
 }
 #body_register{
@@ -321,7 +383,7 @@ textarea {
     background-color: #06d641;
     font-size: 20px;
 }
-.register_inputs1{
+#register_inputs1{
   background-color: white;
   height: 30px;
   position: static;
@@ -333,7 +395,7 @@ textarea {
 #register_btn1{
   position: relative;
   left: 0px;
-  top: 20px;
+  top: 80px;
   font-size: 17px;
   cursor: pointer;
   border: 2px solid red;
@@ -411,7 +473,8 @@ textarea {
 /**********
 accurate searchForm styles
 **********/
-select{
+.selectstyle{
+    
   width: 100%;
   height: 30px;
   margin-top: 15px;
@@ -419,7 +482,7 @@ select{
   box-shadow: #dddddd;
   text-align-last: center;
 }
-input{
+.inputstyle{
   width: 100%;
   height: 30px;
   margin-top: 15px;
@@ -439,22 +502,37 @@ input{
 #haestyle:hover{
     background-color: deepskyblue;
 }
-@media screen and (max-width: 670px) {
+
+@media screen and (max-width: 715px) {
   .logotexti{
-    font-size: 100%;
+    font-size: 20px;
   }
     .logotextii{
-        font-size: 100%;
+        font-size: 14px;;
     }
 }
-@media screen and (max-width: 350px) {
+
+@media screen and (max-width: 520px) {
   .logotexti{
     font-size: 15px;
   }
     .logotextii{
-        font-size: 12px;
+        height: 20px;
+        font-size: 10px;
     }
 }
+/*
+@media screen and (max-width: 480px) {
+  .logotexti{
+    
+    font-size: 10px;
+  }
+    .logotextii{
+        height: 20px;
+        font-size: 10px;
+    }
+}
+*/
 @media screen and (max-width: 875px) {
     .btn_1{
         font-size: 15px;
