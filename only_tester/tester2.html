@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fillarinetti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+    
+<body>
+    <div id="userdivin">dami dami</div>
+    <img id="kua">
+    <div id="passdivin">nami nami</div>
+    <script>
+      var xhr = new XMLHttpRequest(),
+    method = "GET",
+    url = "http://localhost:1337/showpass";
+
+xhr.open(method, url, true);
+xhr.onreadystatechange = function () {
+  if(xhr.readyState === 4 && xhr.status === 200) {
+      let vastausobjecti = JSON.parse(xhr.responseText);
+    console.log(xhr.responseText);
+    
+    document.getElementById("userdivin").innerHTML = vastausobjecti.username;
+    document.getElementById("passdivin").innerHTML = vastausobjecti.Password;
+  }
+};
+xhr.send();
+    </script>
+        
+</body>
+    
+</html>
