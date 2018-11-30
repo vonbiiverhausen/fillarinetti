@@ -4,7 +4,7 @@
   padding: 0;
 }
 #index_body{
-    background-image: url(../imgs/newbackground.png);
+    background-color: #e9e9e9;
     padding: 0px 10px 0px 10px;
     font-family: Arial;
 }
@@ -214,7 +214,7 @@ h4{
 /* the register text style  */
 h12{
     width: 100%;
-    font-family: Lucida Console;
+    font-family: Arial;
     font-size: 30px;
     
     
@@ -324,27 +324,29 @@ h12{
     padding: 20px;
     width: 100%;
     height: 65px;
-    background-color: rgb(162, 165, 159);
+    background-color: #001;
     
 }
 #footer #footer_teksti {
     width: 100%;
-    color: white;
+    color: darkgray;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 #div_footerc{
     width: 100%;
     height: 30px;
     padding: 0px 0px 0px 0px;
-    background-color: rgb(162, 165, 159);
+    background-color: #001;
     
 }
 #div_footerc #footer_copyright {
     width: 100%;
-    color: white;
+    color: darkgray;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
+    
+    
 }
 
 
@@ -396,7 +398,7 @@ h12{
 #register_btn1{
   position: relative;
   left: 0px;
-  top: 80px;
+  top: 25px;
   font-size: 17px;
   cursor: pointer;
   border: 2px solid red;
