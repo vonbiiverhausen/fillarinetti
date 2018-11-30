@@ -4,7 +4,7 @@
   padding: 0;
 }
 #index_body{
-    background-image: url(../imgs/newbackground.png);
+    background-color: #e9e9e9;
     padding: 0px 10px 0px 10px;
     font-family: Arial;
 }
@@ -131,7 +131,6 @@ li a:hover {
 #leave_post_container {
   align-items: center;
   vertical-align: middle;
-  background-color: #14c145;
   padding: 10px 0px 0px 0px;
   margin-left: 15px;
   margin-right: 11px;
@@ -215,7 +214,7 @@ h4{
 /* the register text style  */
 h12{
     width: 100%;
-    font-family: Lucida Console;
+    font-family: Arial;
     font-size: 30px;
     
     
@@ -325,27 +324,29 @@ h12{
     padding: 20px;
     width: 100%;
     height: 65px;
-    background-color: rgb(162, 165, 159);
+    background-color: #001;
     
 }
 #footer #footer_teksti {
     width: 100%;
-    color: white;
+    color: darkgray;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 #div_footerc{
     width: 100%;
     height: 30px;
     padding: 0px 0px 0px 0px;
-    background-color: rgb(162, 165, 159);
+    background-color: #001;
     
 }
 #div_footerc #footer_copyright {
     width: 100%;
-    color: white;
+    color: darkgray;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
+    
+    
 }
 
 
@@ -362,6 +363,8 @@ h12{
   position: absolute;
   top: 500px;
   left: 50%;
+  padding: 10px;
+  margin-bottom: 50px;
   margin-top: -150px;
   margin-left: -150px;
   width: 300px;
@@ -379,7 +382,7 @@ h12{
 }
 .header_register{
     display: grid;
-    grid-template-columns: 20% 34% auto;
+    grid-template-columns: 35% 35% 300px;
     background-color: #06d641;
     font-size: 20px;
 }
@@ -395,7 +398,7 @@ h12{
 #register_btn1{
   position: relative;
   left: 0px;
-  top: 80px;
+  top: 25px;
   font-size: 17px;
   cursor: pointer;
   border: 2px solid red;
@@ -407,7 +410,15 @@ h12{
   background-color: aliceblue;
   color: black;
 }
-
+.div_tyhja_vali{
+    position: absolute;
+    top: 900px;
+    padding: 0px 1303px 0px 0px;
+    width: 1000px;
+    height: 30px;
+    border: 5px solid red;
+}
+/**/
 
 .dkuvat{
     border: 2px solid red;
