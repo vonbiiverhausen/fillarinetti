@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style type="text/css">
+    /*-----------------------------------------------------*/
+    /*buttons style*/
+ button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid orangeRed;
+  background: linear-gradient(45deg, #fff 50%, orangeRed 50%);
+  -webkit-background-clip: text;
+ /* -webkit-text-fill-color: transparent;   */
+ position: relative;
+
+ /* color: #fff; /*For IE*/ 
+     
+  color: orangered; /*For IE*/
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, orangeRed 50%, transparent 50%);
+  z-index: -1;
+}
+
+button,
+button:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s, font-size 0.2s;
+}
+
+button:hover,
+button:hover:after {
+  background-position: 0;
+  font-size: 1.1em;
+  color: white;
+/*  color: orangeRed; /*For IE*/
+    
+   /*For IE*/
+}
+
+    
+    
+    
+    
+    /*---------------------------------------------------*/
+    .bg_body{
+        background: #212229;
+        text-align: center;
+        font-family: arial;
+    }
+    .bg_div{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+    .bg_text{
+        font-size: 50px;
+        color: aliceblue;
+        text-shadow: 5px 4px 5px #8c61de;
+    }
+    .bg_text1{
+        font-size: 50px;
+        color: rgba(255, 255, 255, .1);
+        background-image: url(rain2.jpg);
+        background-repeat: repeat;
+        -webkit-background-clip:text;
+        animation: rulla 30s linear infinite;
+    }
+    .bg_text2{
+        font-size: 50px;
+        animation: rulla1 10s linear infinite;
+        border-radius: 10px;
+        background: -webkit-radial-gradient(left, red, yellow);
+    }
+    .bg_text3{
+        font-size: 50px;
+        color: rgba(255, 255, 255, .1);
+        background-image: url(raibow_kuva.jpg);
+        background-repeat: repeat;
+        -webkit-background-clip:text;
+        animation: rulla2 2s linear infinite;
+    }
+    @keyframes rulla{
+        0%{
+            background-position: left 0px top 10px;
+        }
+        40%{
+            background-position: left 800px top 10px;
+        }
+    }
+    @keyframes rulla2{
+        0%{
+            background-position: left 0px top 10px;
+        }
+        20%{
+            background-position: left 200px top 10px;
+        }
+        40%{
+            background-position: left 400px top 10px;
+        }
+        60%{
+            background-position: left 600px top 10px;
+        }
+        80%{
+            background-position: left 800px top 10px;
+        }
+        100%{
+            background-position: left 1000px top 10px;
+        }
+    }
+    @keyframes rulla1{
+        0%{
+            background-position: left 0px top 10px;
+        }
+        100%{
+            background-position: left 800px top 10px;
+        }
+    }
+</style>
+</head>
+<body class="bg_body">
+    <div class="bg_div">
+    <button>I understand</button>
+    <button>Submit</button>
+    <h1 class="bg_text3">Bg Color To change</h1>
+    <h1 class="bg_text1">Bg Color To change</h1>
+    <h1 class="bg_text">Bg Color To change</h1>
+    <h1 class="bg_text2">Bg Color To change</h1>
+    <h1 class="bg_text4">Bg Color To change</h1>
+    </div>
+</body>
+</html>

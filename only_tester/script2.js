@@ -29,7 +29,7 @@ app.get('/showpass', function(req, resp) {
                if(!!error) {
                    console.log('Error in the query');
                }else{
-                   resp.json(rows[0]);
+                   resp.json(rows);
                }
            });
        }

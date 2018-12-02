@@ -96,6 +96,7 @@ li a:hover {
 
 #login_register {
   align-items: center;
+
 }
 /* tietosuojastyle here! */
 .tietosuoja_laatikko {
@@ -104,9 +105,6 @@ li a:hover {
     background-color: white;
     height: 800px;
     border: groove #77fa77 15px;
-    
-    
-    
 }
 
 .otsikko {
@@ -124,8 +122,8 @@ li a:hover {
     margin: 0px 15px 0px 15px;
 
 }
+/*--------------------------------------*/
 
-/**/
 #leave_post_container {
   align-items: center;
   vertical-align: middle;
@@ -152,18 +150,46 @@ li a:hover {
     text-align: center;
 }
 .home_log_btn{
-    width: 90px;
-    text-align: center;
+    position: relative;
+    left: 90px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
     float: left;
-    color: #161a4b;
     cursor: pointer;
-    background-color: navajowhite;
+    border: 2px solid darkblue;
+    background: linear-gradient(45deg, #fff 50%, orangeRed 50%);
+    -webkit-background-clip: text;
+    color: black;
+}
+.home_log_btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, orangeRed 50%, white 50%);
+  z-index: -1;
+}
+.home_log_btn,
+.home_log_btn:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s, font-size 0.2s;
+}
+.home_log_btn:hover,
+.home_log_btn:hover:after {
+  background-position: 0;
+  font-size: 1.1em;
+  color: white;
 }
 .kesktinappi{
     
     padding: 15px 0px 0px 0px;
 }
-/* Style the buttons */
+/* home page Style the buttons */
 .btn_1{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -183,11 +209,6 @@ li a:hover {
   background-color: #42b649;
   color: white;
 }
-.home_log_btn:hover{
-    border: 2px solid rgba(24, 123, 111, 0.2);
-    background-color: deepskyblue;
-    color: black;
-}
 #register_indesbtn:hover{
     background-color: deepskyblue;
 }
@@ -199,6 +220,7 @@ li a:hover {
 /* Accurate search styles */
 .accurate_search_btn_container {
     background-color: #5a5f78;
+    position: relative;
 }
 /* h4 text style */
 h4{
@@ -212,30 +234,48 @@ h12{
     
     
 }
-#accurate_search {
+.t_and_j_btns{
+    position: relative;
+    background-color: #5a5f78;
+    width: 100%;
+    height: 100px;
+}
+.home_b_btn2{
+    position: relative;
+    left: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 4px;
+    padding: 8px 15px;
+    border-radius: 4px;
     float: left;
-    margin: 20px;
-    width: 200px;
-    background-color: blue;
-    color: white;
     cursor: pointer;
+    border: 2px solid rgb(10, 10, 10);
+    background: linear-gradient(45deg, #fff 50%, orangeRed 50%);
+    -webkit-background-clip: text;
+    color: #fbff90;
 }
-#accurate_search:hover{
-    background: black;
-    border: 2px solid red;
-    color: aliceblue;
+.home_b_btn2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, orangeRed 50%, white 50%);
+  z-index: -1;
 }
-#leave_post_btn {
-    margin: 20px;
-    width: 200px;
-    background-color: blue;
-    color: white;
-    cursor: pointer;
+.home_b_btn2,
+.home_b_btn2:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s, font-size 0.2s;
 }
-#leave_post_btn:hover{
-    background-color: black;
-    border: 2px solid red;
-    color: aliceblue;
+.home_b_btn2:hover,
+.home_b_btn2:hover:after {
+  background-position: 0;
+  font-size: 1.1em;
+  color: white;
 }
 
 /* Post container styles */
@@ -522,6 +562,9 @@ accurate searchForm styles
     .logotextii{
         font-size: 14px;;
     }
+    .home_log_btn{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -552,6 +595,10 @@ accurate searchForm styles
         padding: 1px;
         margin: 1%;
     }
+    .home_log_btn{
+    left: 1px;
+    }
+    
 }
 @media screen and (max-width: 455px) {
     h4{
@@ -567,6 +614,15 @@ accurate searchForm styles
     }
     p{
         font-size: 6.5px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .home_b_btn2{
+        left: 1px;
+        
+    }
+    .t_and_j_btns{
+        height: 120px;
     }
 }
 @media screen and (max-width: 255px) {
