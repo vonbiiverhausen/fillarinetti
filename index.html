@@ -16,7 +16,7 @@
     <div class="header">
         <div id="logo_container">
 
-            <img id="logo" src="logot/fillarinetti_logo_1.png" alt="Logo">
+            <img id="logo" src="logot/fillarinetti_logo_uusi_transparent2.png" alt="Logo">
             
         </div>
         <div id="leave_post_container">
@@ -31,22 +31,20 @@
                 
             <input class="inputstyle" id="user_input" type="text" placeholder="Käyttäjätunnus">
             <input class="inputstyle" id="salasana_input" type="password" placeholder="Salasana">
-                
-            <button id="log_in_btn">Kirjaudu</button>
+            <button class="home_log_btn">Kirjaudu</button>
             </form>
             <form action="registeri.html">
-            <button id="register_indexbtn">Rekisteröidy</button>
+            <button class="home_log_btn">Rekisteröidy</button>
                 </form>
         </div>
     </div>
+        <div class="t_and_j_btns">
+            
+        <button class="home_b_btn2" id="accurate_search">Tarkka haku</button>
         
-    <div class="accurate_search_btn_container">
-        <form action="tarkkahaku.html">
-                <button id="accurate_search">Tarkka haku</button>
-        </form>
-        
-        <button id="leave_post_btn">Jätä ilmoitus</button>
-                    
+        <button class="home_b_btn2" id="leave_post_btn">Jätä ilmoitus</button>
+            </div> 
+    <div class="accurate_search_btn_container">      
            <div class="kesktinappi"></div>
                 <div id="myBtnContainer">
                   <button class="btn_1 active" onclick="filterSelection('all')"> Kakki Pyörät</button>
@@ -169,73 +167,3 @@
 </body>
    
 </html>
-<script type="text/javascript" >
-    
-function checkinputs(){
-    var user = document.getElementById("user_input").value;
-    var salasana = document.getElementById("salasana_input").value;
-    if(user != '' && user != null){
-        document.getElementById('user_input').style.borderColor = "white";
-    }else{
-        alert("käyttäjä tunnus puuttuu jos et ole rekisteröitynyt, niin Rekisteröidy ");
-         document.getElementById('user_input').style.borderColor = "red";
-        
-        return false;
-    }
-    if(salasana != '' && salasana != null){
-        return true;
-    }else{
-        alert("Salasana puuttuu");
-        document.getElementById('salasana_input').style.borderColor = "red";
-        return false;
-    }
-}
- 
-</script>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-
-  arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn_1");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
