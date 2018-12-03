@@ -85,7 +85,7 @@ li a:hover {
 .header {
   display: grid;
   grid-template-columns: 20% 34% auto;
-  background-color: #06d641;
+  background-color: #1fa736;
 }
 #logo {
   width: 120%;
@@ -224,7 +224,7 @@ li a:hover {
 }
 .btn_1.active {
   background-position: 0;
-  font-size: 1.09em;
+  font-size: 1.025em;
   color: none;
   background-color: none;
 }
