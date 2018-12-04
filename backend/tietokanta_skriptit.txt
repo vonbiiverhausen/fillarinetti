@@ -5,7 +5,7 @@ USE fillarinetti;
 CREATE TABLE ilmoitus(
 	ilmId int(11) AUTO_INCREMENT,
 	ilmJattaja varchar(50),
-	ilmJatetetty datetime,
+	ilmJatetty datetime,
 	ilmTila varchar(20),
 	hinta decimal(10,0),
 	tyyppi varchar(25),

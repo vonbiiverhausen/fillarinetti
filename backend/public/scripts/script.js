@@ -13,7 +13,8 @@ $(document).ready(function () {
                     let paivays = new Date(result[i].ilmJatetty);
                     $("#ilmoitukset").append(`
                     <div class="ilmoitus">
-                        <h3>${result[i].ilmTila} ${result[i].tyyppi} ${result[i].hinta} € (${result[i].paikkakunta})</h3> 
+                        <h3>${result[i].ilmTila} ${result[i].tyyppi} ${result[i].hinta} € (${result[i].paikkakunta})</h3>
+                        <img src="./images/${result[i].kuva}" />
                         <strong>Tiedot</strong>
                         <hr />
                         Tyyppi: ${result[i].tyyppi}<br />
@@ -38,7 +39,6 @@ $(document).ready(function () {
         url: "/api/kayttaja/",
         success: function (result, status, xhr) {
             result.forEach(tulos => {
-                //console.log(tulos);
                 $("#kayttajat").append(`<p>Käyttäjä: ${tulos.username}</p>`);
             });
         }
@@ -48,20 +48,34 @@ $(document).ready(function () {
     $("#addPost").submit(function (event) {
         event.preventDefault();
 
-        let ilmData = {
-            "username": $("#kayttaja").val(),
-            "hinta": $("#hinta").val(),
-            "tyyppi": $("#tyyppi").val(),
-            "alatyyppi": $("#alatyyppi").val(),
-            "merkki": $("#merkki").val(),
-            "rengaskoko": $("#rengaskoko").val(),
-            "rungonkoko": $("#rungonkoko").val(),
-            "paikkakunta": $("#paikkakunta").val(),
-            "kuva": $("#kuva").val(),
-            "kuvaus": $("#kuvaus").val()
-        };
+        let ilmData = new FormData();
+        ilmData.append("username", $("#kayttaja").val());
+        ilmData.append("hinta", $("#hinta").val());
+        ilmData.append("tyyppi", $("#tyyppi").val());
+        ilmData.append("alatyyppi", $("#alatyyppi").val());
+        ilmData.append("merkki", $("#merkki").val());
+        ilmData.append("rengaskoko", $("#rengaskoko").val());
+        ilmData.append("rungonkoko", $("#rungonkoko").val());
+        ilmData.append("paikkakunta", $("#paikkakunta").val());
+        ilmData.append("kuva", document.getElementById("kuva").files[0]);
+        ilmData.append("kuvaus", $("#kuvaus").val());
 
-        teePostKutsu("/api/ilmoitukset", JSON.stringify(ilmData));
+        $.ajax({
+            url: '/api/ilmoitukset',
+            type: "POST",
+            data: ilmData,
+            processData: false,
+            contentType: false,
+            success: function (data, status) {
+                alert(data.viesti);
+                location.reload(true);
+            },
+            error: function(xhr, status, error) {
+                let virhe = JSON.parse(xhr.responseText);
+                alert(virhe.virhe);
+            }
+        });
+
     });
 
     $("#addUser").submit(function(event) {

@@ -19,15 +19,16 @@ app.use('/kayttaja', kayttajaRouter);
 
 // Luo käyttäjätunnus / rekisteröi
 kayttajaRouter.post('/', (req, res, next) => {
-    let user = req.body;
+    //let user = req.body;
+    var {username, password, sposti, puhnro} = req.body; // Object destructuring
 
     // Hash password
-    let password = crypto
+    let hashedPassword = crypto
         .createHash('sha256')
-        .update(user.password)
+        .update(password)
         .digest('hex');
 
-    yhteys.query("insert into kayttaja values (?, ?, ?, ?, now(), now())", [user.username, password, user.sposti, user.puhnro] , (err, result, fields) => {
+    yhteys.query("insert into kayttaja values (?, ?, ?, ?, now(), now())", [username, hashedPassword, sposti, puhnro] , (err, result, fields) => {
         if (err){
             if (err.code === "ER_DUP_ENTRY") {
                 res.status(500).send({"virhe": "Käyttäjä löytyy jo rekisteristä"});
@@ -35,7 +36,7 @@ kayttajaRouter.post('/', (req, res, next) => {
                 res.status(500).send({"virhe": err.code});
             }
         } else {
-            res.send({"viesti": "Käyttäjä "+user.username+" lisätty"});
+            res.send({"viesti": "Käyttäjä "+username+" lisätty"});
         }
     });
 });
