@@ -8,7 +8,6 @@ $(document).ready(function () {
             if (result.length === 0) {
                 $("#ilmoitukset").html("Ilmoituksia ei löytynyt");
             } else {
-                //console.log(result[0]);
                 for (let i = 0; i < result.length; i++) {
                     let paivays = new Date(result[i].ilmJatetty);
                     $("#ilmoitukset").append(`
@@ -26,7 +25,7 @@ $(document).ready(function () {
                         <hr />
                         Ilmoituksen id: ${result[i].ilmId}, 
                         Ilmoituksen jättäjä: ${result[i].ilmJattaja}, 
-                        Ilmoitus jätetty: ${paivays.toLocaleString('fi-FI', { timeZone: 'UTC' })}<br />
+                        Ilmoitus jätetty: ${paivays.toLocaleString('fi-FI', { timeZone: 'Europe/Helsinki' })}<br />
                     </div>`);
                 }
             }

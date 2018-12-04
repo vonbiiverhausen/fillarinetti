@@ -25,9 +25,8 @@ ilmoitusRouter.post('/', (req, res, next) => {
     let kuva;
 
     form.parse(req, function (err, fields, files) {
-        var { username, hinta, tyyppi, alatyyppi, merkki, rengaskoko, rungonkoko, paikkakunta, kuvaus } = fields;
-        //console.log(kuva);
-
+        var { username, hinta, tyyppi, alatyyppi, merkki, rengaskoko, rungonkoko, paikkakunta, kuvaus } = fields; // Object destructuring
+        console.log("parse");
         yhteys.query(`
     insert into ilmoitus (ilmJattaja, ilmJatetty, ilmTila, hinta, tyyppi, alatyyppi, merkki, rengas_koko, runko_koko, paikkakunta, kuva, kuvaus) values (?, now(), 'Myynnissä', ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
@@ -53,8 +52,11 @@ ilmoitusRouter.post('/', (req, res, next) => {
     });
 
     form.on('fileBegin', (name, file) => {
-        file.path = path.join(__dirname, '../public/images/' + file.name);
-        kuva = file.name;
+        let [tiedNimi, tiedPaate] = file.name.split('.');
+        tiedNimi = 'ilm_'+Date.now().toString()+'.'+tiedPaate;
+        file.path = path.join(__dirname, '../public/images/'+ tiedNimi);
+        console.log("filebegin");
+        kuva = tiedNimi;
     });
 });
 
