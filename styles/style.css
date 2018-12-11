@@ -258,7 +258,43 @@ h12{
     background-color: #5a5f78;
     width: 100%;
     height: 100px;
+
 }
+.show_styles1{
+    background-color: #9eaca7;
+    width: 4%;
+    height: 30%;
+    right: 45px;
+    position: absolute;
+    top:65px;
+    cursor:pointer;
+    border: 1px groove black ;
+    border-radius: 13%;
+    
+    
+}
+.show_styles2{
+    background-color: #9eaca7;
+    width: 4%;
+    height: 30%;
+    right: 3px;
+    position: absolute;
+    top:65px;
+    cursor:pointer;
+    border: 1px groove black ;
+    border-radius: 13%;
+    
+   
+}
+.show_styles1:hover{
+  background-color: #e9e9e9;
+    
+}
+.show_styles2:hover{
+  background-color: #e9e9e9;
+    
+}
+
 .home_b_btn2{
     position: relative;
     left: 60px;

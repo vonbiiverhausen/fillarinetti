@@ -82,3 +82,10 @@ function checkinputs(){
     }
 }
 /*-------------------------------------------------*/
+
+/* listanakyma*/
+
+function listan_tyyli(){
+    
+    document.getElementsByClassName("column").style.float ='none';
+}
