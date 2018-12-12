@@ -11,9 +11,14 @@
 </head>
     
 <body>
-    <div id="userdivin">dami dami</div>
     
-    <div id="passdivin">nami nami</div>
+    <div id="userd">dami dami on username ja nami nami on Password</div>
+    <div id="userdivin">dami dami on username ja nami nami on Password</div>
+        <br>
+    <div id="userdivin1">dami dami</div>
+            <br>
+    <div id="userdivin2">nami nami</div>
+
     <script>
         /*
         var invocation = new XMLHttpRequest();
@@ -37,13 +42,15 @@ function callOtherDomain() {
         xhr.onreadystatechange = function () {
             
         if(xhr.readyState === 4 && xhr.status === 200) {
-            let vastausobjecti = JSON.parse(xhr.responseText);
+            
+            var vastausobjecti = JSON.parse(xhr.responseText);
             console.log(xhr.responseText);
     
-            document.getElementById("userdivin").innerHTML = vastausobjecti.username;
-            document.getElementById("passdivin").innerHTML = vastausobjecti.Password;
-  }
-            
+            document.getElementById("userdivin").innerHTML = vastausobjecti[0].username + vastausobjecti[0].Password;
+            document.getElementById("userdivin1").innerHTML = vastausobjecti[1].username + vastausobjecti[1].Password;
+            document.getElementById("userdivin2").innerHTML = vastausobjecti[2].username + vastausobjecti[2].Password;
+        
+        }            
 };
 xhr.send();
 

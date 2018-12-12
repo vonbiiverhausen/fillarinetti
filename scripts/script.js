@@ -81,4 +81,19 @@ function checkinputs(){
         return false;
     }
 }
-/*-------------------------------------------------*/
+/*-------------------------------------------------
+
+ listanakyma
+
+function listan_tyyli(){    
+   var elements = document.getElementsByClassName("column"), i, len;
+      for (i = 0, len = elements.length; i < len; i++) {
+          elements[i].style.float = 'none';
+}
+       var elements = document.getElementsByClassName(""), i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.padding = '10px 100px 0px 0px';
+}
+}
+
+*/
