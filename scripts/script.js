@@ -81,19 +81,99 @@ function checkinputs(){
         return false;
     }
 }
-/*-------------------------------------------------
-
- listanakyma
+/*-----------------------listanakyma--------------------------*/
 
 function listan_tyyli(){    
    var elements = document.getElementsByClassName("column"), i, len;
       for (i = 0, len = elements.length; i < len; i++) {
           elements[i].style.float = 'none';
 }
-       var elements = document.getElementsByClassName(""), i, len;
+       var elements = document.getElementsByClassName("pitoisuus"), i, len;
             for (i = 0, len = elements.length; i < len; i++) {
-                elements[i].style.padding = '10px 100px 0px 0px';
+                elements[i].style.backgroundColor = '#9eaca7';
+}
+           var elements = document.getElementsByClassName("pitoisuus"), i, len;
+                for (i = 0, len = elements.length; i < len; i++) {
+                    elements[i].style.backgroundColor = '#9eaca7';
+}
+                var elements = document.getElementsByClassName("rivi_divi"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                        elements[i].style.width = '150%';
+                        elements[i].style.padding = '0px 309% 0px 0px';
+                        elements[i].style.border = '4px solid #5c86a4'; 
+                    //    elements[i].style.backgroundColor = '#5c86a4';
+}
+                var elements = document.getElementsByClassName("h_4"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.position = 'relative';
+                            elements[i].style.left = '300px';
+                            elements[i].style.top = '-181px';
+                          
+}
+                var elements = document.getElementsByClassName("kuva_riviksi"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.width = '270px';
+                            
+                          
+}             var elements = document.getElementsByClassName("p_riviksi"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.position = 'relative';
+                            elements[i].style.left = '300px';
+                            elements[i].style.top = '-170px';
+} 
+                var elements = document.getElementsByClassName("a_ilmoitus"), i, len;
+                       for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.position = 'relative';
+                            elements[i].style.left = '300px';
+                            elements[i].style.top = '-155px';
 }
 }
 
-*/
+/*-----------------------listanakyma_takasin_riviksi-------------------------*/
+
+function listan_tyyli_riviksi(){    
+   var elements = document.getElementsByClassName("column"), i, len;
+      for (i = 0, len = elements.length; i < len; i++) {
+          elements[i].style.float = 'left';
+}
+           var elements = document.getElementsByClassName("pitoisuus"), i, len;
+                for (i = 0, len = elements.length; i < len; i++) {
+                    elements[i].style.backgroundColor = '#5c86a4';
+}
+                    var elements = document.getElementsByClassName("rivi_divi"), i, len;
+                        for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.width = '';
+                            elements[i].style.padding = '';
+                            elements[i].style.border = '';
+}
+                    var elements = document.getElementsByClassName("kuva_riviksi"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.width = '100%';
+                            
+                          
+}
+                            var elements = document.getElementsByClassName("h_4"), i, len;
+                                for (i = 0, len = elements.length; i < len; i++) {
+                                    elements[i].style.position = '';
+                                    elements[i].style.left = '';
+                                    elements[i].style.top = '';   
+}   
+                var elements = document.getElementsByClassName("p_riviksi"), i, len;
+                     for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.position = '';
+                            elements[i].style.left = '';
+                            elements[i].style.top = '';
+}
+    
+                var elements = document.getElementsByClassName("a_ilmoitus"), i, len;
+                       for (i = 0, len = elements.length; i < len; i++) {
+                            elements[i].style.position = '';
+                            elements[i].style.left = '';
+                            elements[i].style.top = '';
+}
+    
+    
+    
+    
+    
+}
