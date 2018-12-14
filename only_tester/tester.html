@@ -7,24 +7,22 @@
     <title>Fillarinetti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<!--/*yuffffffffffffffffffffffyfkuyfkuyfuyfhfth*/-->
 </head>
-    
+
 <body>
     <div id="divin">dami dami</div>
     <script>
-        
-            var sam = new XMLHttpRequest();
-            const url = "https://api.myjson.com/bins/8ifii";
-            sam.open("GET", url, false);
-            sam.send(null);
-            let vastaus = sam.responseText; 
-            console.log(vastaus);
-            let vastausobjecti = JSON.parse(vastaus);
-            document.getElementById("divin").innerHTML = vastausobjecti.Password;
-        
+        var sam = new XMLHttpRequest();
+        const url = "https://api.myjson.com/bins/8ifii";
+        sam.open("GET", url, false);
+        sam.send(null);
+        let vastaus = sam.responseText;
+        console.log(vastaus);
+        let vastausobjecti = JSON.parse(vastaus);
+        document.getElementById("divin").innerHTML = vastausobjecti.Password;
     </script>
-        
+
 </body>
-    
+
 </html>
