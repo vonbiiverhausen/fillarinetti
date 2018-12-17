@@ -1,10 +1,10 @@
 console.log("Tästä se alkaa");
 
 document.getElementById("leave_post_btn").addEventListener("click", function () {
-    window.location = "http://127.0.0.1:5500/post_form.html";
+    window.location = "post_form.html";
 });
 document.getElementById("logo").addEventListener("click", function () {
-    window.location = "http://127.0.0.1:5500/index.html";
+    window.location = "index.html";
     console.log("testi");
 });
 document
@@ -88,6 +88,8 @@ function checkinputs() {
 /*-----------------------listanakyma--------------------------*/
 
 function listan_tyyli() {
+    document.getElementById('btn_show_styles2').style.backgroundColor = "#9eaca7";
+    document.getElementById('btn_show_styles1').style.backgroundColor = "#fff";
     var elements = document.getElementsByClassName("column"),
         i, len;
     for (i = 0, len = elements.length; i < len; i++) {
@@ -140,73 +142,76 @@ function listan_tyyli() {
         elements[i].style.left = '300px';
         elements[i].style.top = '-155px';
     }
+
     function myFunction(x) {
-  if (x.matches) { // If media query matches
-   var elements = document.getElementsByClassName("kuva_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.width = '150px';
-  }
-          var elements = document.getElementsByClassName("p_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '170px';
-        elements[i].style.top = '-90px';
-    }
-          var elements = document.getElementsByClassName("h_4"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '170px';
-        elements[i].style.top = '-100px';
+        if (x.matches) { // If media query matches
+            var elements = document.getElementsByClassName("kuva_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.width = '150px';
+            }
+            var elements = document.getElementsByClassName("p_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '170px';
+                elements[i].style.top = '-90px';
+            }
+            var elements = document.getElementsByClassName("h_4"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '170px';
+                elements[i].style.top = '-100px';
 
-    }
-          var elements = document.getElementsByClassName("a_ilmoitus"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '170px';
-        elements[i].style.top = '-80px';
-    }
-}else{
-     var elements = document.getElementsByClassName("kuva_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.width = '270px';
-  }
-      var elements = document.getElementsByClassName("p_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '300px';
-        elements[i].style.top = '-170px';
-    }
-    var elements = document.getElementsByClassName("a_ilmoitus"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '300px';
-        elements[i].style.top = '-155px';
-    }
-        var elements = document.getElementsByClassName("h_4"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = 'relative';
-        elements[i].style.left = '300px';
-        elements[i].style.top = '-181px';
+            }
+            var elements = document.getElementsByClassName("a_ilmoitus"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '170px';
+                elements[i].style.top = '-80px';
+            }
+        } else {
+            var elements = document.getElementsByClassName("kuva_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.width = '270px';
+            }
+            var elements = document.getElementsByClassName("p_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '300px';
+                elements[i].style.top = '-170px';
+            }
+            var elements = document.getElementsByClassName("a_ilmoitus"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '300px';
+                elements[i].style.top = '-155px';
+            }
+            var elements = document.getElementsByClassName("h_4"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = 'relative';
+                elements[i].style.left = '300px';
+                elements[i].style.top = '-181px';
 
+            }
+        }
     }
-}
-    }
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 }
 
 /*-----------------------listanakyma_takasin_riviksi-------------------------*/
 
 function listan_tyyli_riviksi() {
+    document.getElementById('btn_show_styles2').style.backgroundColor = "#fff";
+    document.getElementById('btn_show_styles1').style.backgroundColor = "#9eaca7";
     var elements = document.getElementsByClassName("column"),
         i, len;
     for (i = 0, len = elements.length; i < len; i++) {
@@ -224,7 +229,7 @@ function listan_tyyli_riviksi() {
         elements[i].style.padding = '';
         elements[i].style.border = '';
     }
-  var elements = document.getElementsByClassName("kuva_riviksi"),
+    var elements = document.getElementsByClassName("kuva_riviksi"),
         i, len;
     for (i = 0, len = elements.length; i < len; i++) {
         elements[i].style.width = '100%';
@@ -252,66 +257,66 @@ function listan_tyyli_riviksi() {
         elements[i].style.top = '';
     }
 
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-   var elements = document.getElementsByClassName("kuva_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.width = '100%';
-  }
-        var elements = document.getElementsByClassName("h_4"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
-
-    }
- var elements = document.getElementsByClassName("p_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
-    }
-    var elements = document.getElementsByClassName("a_ilmoitus"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
-    }
-}else{
-     var elements = document.getElementsByClassName("kuva_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.width = '100%';
-  }
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            var elements = document.getElementsByClassName("kuva_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.width = '100%';
+            }
             var elements = document.getElementsByClassName("h_4"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
 
+            }
+            var elements = document.getElementsByClassName("p_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
+            }
+            var elements = document.getElementsByClassName("a_ilmoitus"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
+            }
+        } else {
+            var elements = document.getElementsByClassName("kuva_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.width = '100%';
+            }
+            var elements = document.getElementsByClassName("h_4"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
+
+            }
+            var elements = document.getElementsByClassName("p_riviksi"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
+            }
+            var elements = document.getElementsByClassName("a_ilmoitus"),
+                i, len;
+            for (i = 0, len = elements.length; i < len; i++) {
+                elements[i].style.position = '';
+                elements[i].style.left = '';
+                elements[i].style.top = '';
+            }
+        }
     }
- var elements = document.getElementsByClassName("p_riviksi"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
-    }
-    var elements = document.getElementsByClassName("a_ilmoitus"),
-        i, len;
-    for (i = 0, len = elements.length; i < len; i++) {
-        elements[i].style.position = '';
-        elements[i].style.left = '';
-        elements[i].style.top = '';
-    }
-}
-    }
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 }

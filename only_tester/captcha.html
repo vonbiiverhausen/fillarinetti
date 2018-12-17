@@ -7,7 +7,7 @@
     <script type="text/javascript">
         function validate() {
             var vastaus = document.getElementById("vastaus").value;
-            
+
             var digit1 = parseInt(document.getElementById("digit1").innerHTML);
             var digit2 = parseInt(document.getElementById("digit2").innerHTML);
 
@@ -18,7 +18,7 @@
             } else if (vastaus != summa) {
                 alert("Väärä");
                 return false;
-            }else if(vastaus == summa){
+            } else if (vastaus == summa) {
                 return true;
             }
         }
@@ -41,7 +41,7 @@
             <span id="digit1"></span> +
             <span id="digit2"></span> =
             <br />
-            <input type="text" id="vastaus" size="2"; />
+            <input type="text" id="vastaus" size="2" ; />
             <button type="submit">Sumbit</button>
         </div>
     </form>
