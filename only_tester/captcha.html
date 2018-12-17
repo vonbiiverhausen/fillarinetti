@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate() {
+            var vastaus = document.getElementById("vastaus").value;
+
+            var digit1 = parseInt(document.getElementById("digit1").innerHTML);
+            var digit2 = parseInt(document.getElementById("digit2").innerHTML);
+
+            var summa = digit1 + digit2;
+            if (vastaus == null || vastaus == "") {
+                alert('difuiliduif');
+                return false;
+            } else if (vastaus != summa) {
+                alert("Väärä");
+                return false;
+            } else if (vastaus == summa) {
+                return true;
+            }
+        }
+
+        function randnums() {
+            var randomi_numrot1 = Math.floor(Math.random() * 10) + 1;
+            var randomi_numrot2 = Math.floor(Math.random() * 10) + 1;
+            document.getElementById("digit1").innerHTML = randomi_numrot1;
+            document.getElementById("digit2").innerHTML = randomi_numrot2;
+
+        }
+    </script>
+</head>
+
+<body onload="randnums();">
+    <br />
+    <form action="" method="post" onsubmit="return validate();">
+        <div class="spam_nakyva">
+            <strong>add these numbers</strong>
+            <span id="digit1"></span> +
+            <span id="digit2"></span> =
+            <br />
+            <input type="text" id="vastaus" size="2" ; />
+            <button type="submit">Sumbit</button>
+        </div>
+    </form>
+</body>
+
+</html>

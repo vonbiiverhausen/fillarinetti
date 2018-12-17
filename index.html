@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Fillarinetti</title>
@@ -12,168 +13,185 @@
 
 <body id="index_body">
     <div class="main">
-        
-    <div class="header">
-        <div id="logo_container">
 
-            <img id="logo" src="logot/FILLARINETTI_LOGO_TEST_NEW_1.png" alt="Logo">
-            
-        </div>
-        <div id="leave_post_container">
-            <div class="logotyhjatext">
+        <div class="header">
+            <div id="logo_container">
+
+                <img id="logo" src="logot/FILLARINETTI_LOGO_TEST_NEW_1.png" alt="Logo">
+
             </div>
-            <p class="logotextii">Suomen monipuolisin pyörien myynti- ja ostopaikka</p>
-            
-        </div>
-        <div id="login_register">
-            <form action="lol.php" method="post" onsubmit="return checkinputs()">
-                
-            <input class="inputstyle" id="user_input" type="text" placeholder="Käyttäjätunnus">
-            <input class="inputstyle" id="salasana_input" type="password" placeholder="Salasana">
-            <button class="home_log_btn">Kirjaudu</button>
-            </form>
-            <form action="registeri.html">
-            <button class="home_log_btn">Rekisteröidy</button>
-                </form>
-        </div>
-    </div>
-        
-    <div class="accurate_search_btn_container">      
-           <div class="kesktinappi"></div>
-                <div id="myBtnContainer">
-                  <button class="btn_1 active" onclick="filterSelection('all')"> Kaikki pyörät</button>
-    
-                  <button class="btn_1" onclick="filterSelection('tasamaa')"> Tasamaapyörät</button>
-            
-                  <button class="btn_1" onclick="filterSelection('maasto')"> Maastopyörät</button>
-            
-                  <button class="btn_1" onclick="filterSelection('perus')"> Peruspyörät</button>
-        
-                  <button class="btn_1" onclick="filterSelection('lasten')"> Lastenpyörät</button>
-        
-                  <button class="btn_1" onclick="filterSelection('sahko')"> Sähköpyörät</button>
-        
-                  <button class="btn_1" onclick="filterSelection('muu')"> Muut pyörät</button>
+            <div id="leave_post_container">
+                <div class="logotyhjatext">
                 </div>
-    
-        <div class="kesktinappi"></div>
-            
-    </div>
+                <p class="logotextii">Suomen monipuolisin pyörien myynti- ja ostopaikka</p>
+
+            </div>
+            <div id="login_register">
+                <form action="lol.php" method="post" onsubmit="return checkinputs()">
+
+                    <input class="inputstyle" id="user_input" type="text" placeholder="Käyttäjätunnus">
+                    <input class="inputstyle" id="salasana_input" type="password" placeholder="Salasana">
+                    <button class="home_log_btn">Kirjaudu</button>
+                </form>
+                <form action="registeri.html">
+                    <button class="home_log_btn">Rekisteröidy</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="accurate_search_btn_container">
+            <div class="kesktinappi"></div>
+            <div id="myBtnContainer">
+                <button class="btn_1 active" onclick="filterSelection('all')"> Kaikki pyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('tasamaa')"> Tasamaapyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('maasto')"> Maastopyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('perus')"> Peruspyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('lasten')"> Lastenpyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('sahko')"> Sähköpyörät</button>
+
+                <button class="btn_1" onclick="filterSelection('muu')"> Muut pyörät</button>
+            </div>
+
+            <div class="kesktinappi"></div>
+
+        </div>
         <div class="t_and_j_btns">
-            
-        <button class="home_b_btn2" id="accurate_search">Tarkkahaku</button>
-        
-        <button class="home_b_btn2" id="leave_post_btn">Jätä ilmoitus</button>
-        
-        <button class="show_styles1 action" onclick="listan_tyyli()" id="btn_show_styles1">
-             <svg  viewBox="-80 -30 700 500"><path d="M506 114H134a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h372a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm6 154v-24a6 6 0 0 0-6-6H134a6 6 0 0 0-6 6v24a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6zm0 160v-24a6 6 0 0 0-6-6H134a6 6 0 0 0-6 6v24a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6zM84 120V72c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12zm0 160v-48c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12zm0 160v-48c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12z"></path></svg>
+
+            <button class="home_b_btn2" id="accurate_search">Tarkkahaku</button>
+
+            <button class="home_b_btn2" id="leave_post_btn">Jätä ilmoitus</button>
+
+            <button class="show_styles1" onclick="listan_tyyli()" id="btn_show_styles1">
+                <svg viewBox="-80 -30 700 500">
+                    <path d="M506 114H134a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h372a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm6 154v-24a6 6 0 0 0-6-6H134a6 6 0 0 0-6 6v24a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6zm0 160v-24a6 6 0 0 0-6-6H134a6 6 0 0 0-6 6v24a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6zM84 120V72c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12zm0 160v-48c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12zm0 160v-48c0-6.627-5.373-12-12-12H24c-6.627 0-12 5.373-12 12v48c0 6.627 5.373 12 12 12h48c6.627 0 12-5.373 12-12z"></path>
+                </svg>
             </button>
-        <button class="show_styles2" id="btn_show_styles2">
-             <svg viewBox="-75 -20 660 500"><path d="M0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48H48C21.49 32 0 53.49 0 80zm240-16v176H32V80c0-8.837 7.163-16 16-16h192zM32 432V272h208v176H48c-8.837 0-16-7.163-16-16zm240 16V272h208v160c0 8.837-7.163 16-16 16H272zm208-208H272V64h192c8.837 0 16 7.163 16 16v160z"></path></svg>
-           
-            </button> 
-        
-            </div> 
-<div class="row">  
-<div class="column tasamaa">
-    <div class="content">
-     <a href="www.youtube.com">
-    <img src="imgs/testi_kuva6.jpg" alt="Lights" style="width:100%">
-         </a>
-      <h4>230€</h4>
-      <p>Tasamaapyörä</p>
-      <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-</div>
+            <button class="show_styles2" onclick="listan_tyyli_riviksi()" id="btn_show_styles2">
+                <svg viewBox="-75 -20 660 500">
+                    <path d="M0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48H48C21.49 32 0 53.49 0 80zm240-16v176H32V80c0-8.837 7.163-16 16-16h192zM32 432V272h208v176H48c-8.837 0-16-7.163-16-16zm240 16V272h208v160c0 8.837-7.163 16-16 16H272zm208-208H272V64h192c8.837 0 16 7.163 16 16v160z"></path>
+                </svg>
 
-<div class="column muu">
-    <div class="content">
-    <a href="www.youtube.com">
-    <img src="imgs/img_girl.jpg.jpg" alt="Nature" style="width:100%">
-        </a>
-      <h4>MuuPyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>
-  
-  <div class="column tasamaa">
-    <div class="content">
-    <a href="www.youtube.com">
-      <img src="imgs/testi_kuva3.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>Tasamaanpyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>
-            
-  <div class="column maasto">
-    <div class="content">
-    <a href="www.youtube.com">
-    <img src="imgs/testi_kuva2.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>Maastopyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
+            </button>
 
-    </div>
-  </div>
-            
-  <div class="column sahko">
-    <div class="content">
-    <a href="www.youtube.com">
-    <img src="imgs/testikuva7.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>Sähköpyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>
-
-  <div class="column perus">
-    <div class="content">
-    <a href="www.youtube.com">
-      <img src="imgs/testi_kuva6.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>peruspyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>
-            
-  <div class="column lasten">
-    <div class="content">
-    <a href="www.youtube.com">
-    <img src="imgs/testi_kuva5.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>Lastenpyörät</h4>
-      <p>Lorem ipsum dolor..</p>
-         <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>
-            
-  <div class="column muu">
-    <div class="content">
-    <a href="www.youtube.com">
-    <img  src="imgs/testi_kuva3.jpg" alt="Car" style="width:100%">
-        </a>
-      <h4>MuuPöyrät</h4>
-      <p>Lorem ipsum dolor..</p> 
-        <a style="color:#2d178c" href="www.youtube.com">Avaa ilmoitus..</a>
-    </div>
-  </div>        
-    
-    <script src="scripts/script.js"></script>
-    </div>
         </div>
-    <div id="footer"> 
-   <h1 id="footer_teksti">Sivustolla käytetään evästeitä, joilla voimme parantaa sivustoa ja käyttökokemustasi sekä kohdentaa markkinointiamme. Osa evästeistä on sivuston toiminnalle välttämättömiä. 
-        <br>Lue tietosuojaselosteestamme, miten käsittelemme evästeisiin liitettyjä tietoja. </h1>
+        <div class="row">
+            <div class="column tasamaa">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva6.jpg" alt="Lights" style="width:100%">
+                        </a>
+                        <h4 class="h_4">230€</h4>
+                        <p class="p_riviksi">Tasamaapyörä</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column muu">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/img_girl.jpg.jpg" alt="Nature" style="width:100%">
+                        </a>
+                        <h4 class="h_4">430€</h4>
+                        <p class="p_riviksi">MuuPyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column tasamaa">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva3.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">460€</h4>
+                        <p class="p_riviksi">Tasamaanpyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column maasto">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva2.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">376€</h4>
+                        <p class="p_riviksi">Maastopyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column sahko">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testikuva7.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">751€</h4>
+                        <p class="p_riviksi">Sähköpyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column perus">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva6.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">319€</h4>
+                        <p class="p_riviksi">peruspyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column lasten">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva5.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">150€</h4>
+                        <p class="p_riviksi">Lastenpyörät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column muu">
+                <div class="rivi_divi">
+                    <div class="pitoisuus">
+                        <a href="www.youtube.com">
+                            <img class="kuva_riviksi" src="imgs/testi_kuva3.jpg" alt="Car" style="width:100%">
+                        </a>
+                        <h4 class="h_4">245€</h4>
+                        <p class="p_riviksi">MuuPöyrät</p>
+                        <a class="a_ilmoitus" href="www.youtube.com">Avaa ilmoitus..</a>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts/script.js"></script>
         </div>
+    </div>
+    <div id="footer">
+        <h1 id="footer_teksti">Sivustolla käytetään evästeitä, joilla voimme parantaa sivustoa ja käyttökokemustasi sekä kohdentaa markkinointiamme. Osa evästeistä on sivuston toiminnalle välttämättömiä.
+            <br>Lue tietosuojaselosteestamme, miten käsittelemme evästeisiin liitettyjä tietoja. </h1>
+    </div>
     <div id="div_footerc">
-    <h2 id="footer_copyright"> Copyright @ 2018 Fillarinetti</h2> 
+        <h2 id="footer_copyright"> Copyright @ 2018 Fillarinetti</h2>
     </div>
 </body>
-   
+
 </html>

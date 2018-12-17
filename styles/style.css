@@ -1,22 +1,26 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#index_body{
+
+#index_body {
     background-color: #e9e9e9;
     padding: 0px 10px 0px 10px;
     font-family: Arial;
 }
+
 .main {
     background-color: #9eaca7;
     max-width: 900px;
     border: 1.9px solid #5a5f78;
     margin: auto;
 }
+
 .row {
     margin: 10px -16px;
 }
+
 .row,
 .row > .column {
     padding: 8px;
@@ -26,10 +30,11 @@
 .column {
     float: left;
     width: 33.33%;
-    display: none; /* Hide all elements by default */
+    display: none;
+    /* Hide all elements by default */
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
@@ -37,15 +42,21 @@
 }
 
 /* Content */
-.content {
+.pitoisuus {
     background-color: #5c86a4;
     padding: 10px;
 }
 
+/*----ava_ilmoitus----*/
+.a_ilmoitus {
+    color: #2d178c;
+}
+
 /* The "show" class is added to the filtered elements */
 .show {
-  display: block;
+    display: block;
 }
+
 /*
 button {
   size: 50px;
@@ -54,50 +65,55 @@ button {
 }
 */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dddddd;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  padding: 8px;
-  text-decoration: none;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
 }
+
 li a:hover {
-  background-color: rgb(99, 92, 92);
+    background-color: rgb(99, 92, 92);
 }
 
 /* Header styles */
 .header {
-  display: grid;
-  grid-template-columns: 20% 34% auto;
-  background-color: #1fa736;
+    display: grid;
+    grid-template-columns: 20% 34% auto;
+    background-color: #1fa736;
 }
+
 #logo {
-  width: 120%;
+    width: 120%;
+    cursor: pointer;
 }
+
 #logo_container {
     align-items: center;
 }
 
 #login_register {
-  align-items: center;
+    align-items: center;
 
 }
+
 /* tietosuojastyle here! */
 .tietosuoja_laatikko {
     max-width: 900px;
@@ -110,10 +126,10 @@ li a:hover {
 .otsikko {
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
-.btekstit{
+.btekstit {
     font-size: 17px;
     font-family: arial;
 }
@@ -122,34 +138,39 @@ li a:hover {
     margin: 0px 15px 0px 15px;
 
 }
+
 /*--------------------------------------*/
 
 #leave_post_container {
-  align-items: center;
-  vertical-align: middle;
-  padding: 10px 0px 0px 0px;
-  margin-left: 15px;
-  margin-right: 11px;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10px 0px 0px 0px;
+    margin-left: 15px;
+    margin-right: 11px;
 }
-.logotyhjatext{
+
+.logotyhjatext {
     margin-top: 15px;
     padding: 0px 0px 0px 10px;
     height: 40px;
     width: 100%;
 }
-.logotexti{
+
+.logotexti {
     font-size: 30px;
     color: white;
     word-break: break-all;
     text-align: center;
 }
-.logotextii{
+
+.logotextii {
     font-size: 20px;
     color: white;
     word-break: break-all;
     text-align: center;
 }
-.home_log_btn{
+
+.home_log_btn {
     position: relative;
     left: 90px;
     margin-top: 15px;
@@ -163,77 +184,88 @@ li a:hover {
     -webkit-background-clip: text;
     color: black;
 }
+
 .home_log_btn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(45deg, orangeRed 50%, white 50%);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, orangeRed 50%, white 50%);
+    z-index: -1;
 }
+
 .home_log_btn,
 .home_log_btn:after {
-  background-size: 300%;
-  background-position: 100%;
-  transition: 1s, font-size 0.2s;
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
 }
+
 .home_log_btn:hover,
 .home_log_btn:hover:after {
-  background-position: 0;
-  font-size: 1.1em;
-  color: white;
+    background-position: 0;
+    font-size: 1.1em;
+    color: white;
 }
-.kesktinappi{
-    
+
+.kesktinappi {
+
     padding: 15px 0px 0px 0px;
 }
+
 /* home page Style the buttons */
-.btn_1{
- padding: 8px 16px;
- margin-left: 4px;
- border-radius: 4px;
- cursor: pointer;
- border: 2px solid black;
- background: linear-gradient(45deg, #fff 50%, #5c86a4 50%);
- position: relative;
- color: black;
+.btn_1 {
+    padding: 8px 16px;
+    margin-left: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid black;
+    background: linear-gradient(45deg, #fff 50%, #5c86a4 50%);
+    position: relative;
+    color: black;
 
 }
-.btn_1:after{
- content:"";
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- background: linear-gradient(45deg, orangeRed 50%, transparent 50%);
- z-index: -1;
+
+.btn_1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, orangeRed 50%, transparent 50%);
+    z-index: -1;
 }
+
 .btn_1,
-.btn_1:after{
- background-size: 300%;
- background-position: 100%;
- transition: 1s, font-size 0.2s;
+.btn_1:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
 }
-.btn_1:hover{
- background-position: 0;
-    font-size: 1.1em;
+
+.btn_1:hover {
+    background-position: 0;
+    font-size: 0.6em;
     color: black;
 }
+
 .btn_1.active {
-  background-position: 0;
-  font-size: 1.025em;
-  color: none;
-  background-color: none;
+    background-position: 0;
+    font-size: 0.8em;
+    color: none;
+    background-color: none;
 }
-#register_indesbtn:hover{
+
+#register_indesbtn:hover {
     background-color: deepskyblue;
 }
+
 /*Quick search menubar styles*/
 .quick_search_links {
-  background-color: blue;
+    background-color: blue;
 }
 
 /* Accurate search styles */
@@ -241,61 +273,64 @@ li a:hover {
     background-color: #5a5f78;
     position: relative;
 }
+
 /* h4 text style */
-h4{
+h4 {
     font-size: 15px;
 }
+
 /* the register text style  */
-h12{
+h12 {
     width: 100%;
     font-family: Arial;
     font-size: 30px;
-    
-    
+
+
 }
-.t_and_j_btns{
+
+.t_and_j_btns {
     position: relative;
     background-color: #5a5f78;
     width: 100%;
     height: 100px;
 
 }
-.show_styles1{
+
+.show_styles1 {
     background-color: #9eaca7;
-    width: 4%;
-    height: 30%;
+    width: 30px;
+    height: 30px;
     right: 45px;
     position: absolute;
-    top:65px;
-    cursor:pointer;
-    border: 1px groove black ;
+    top: 65px;
+    cursor: pointer;
+    border: 1px groove black;
     border-radius: 13%;
-    
-    
-}
-.show_styles2{
-    background-color: #9eaca7;
-    width: 4%;
-    height: 30%;
-    right: 3px;
-    position: absolute;
-    top:65px;
-    cursor:pointer;
-    border: 1px groove black ;
-    border-radius: 13%;
-    
-   
-}
-.show_styles1:hover{
-  background-color: #e9e9e9;
-    
-}
-.show_styles2:hover{
-  background-color: #e9e9e9;
-    
 }
 
-.home_b_btn2{
+.show_styles2 {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    right: 3px;
+    position: absolute;
+    top: 65px;
+    cursor: pointer;
+    border: 1px groove black;
+    border-radius: 13%;
+}
+
+.show_styles1:hover {
+    background-color: #e9e9e9;
+
+}
+
+.show_styles2:hover {
+    background-color: #e9e9e9;
+
+}
+
+.home_b_btn2 {
     position: relative;
     left: 60px;
     margin-top: 20px;
@@ -310,219 +345,243 @@ h12{
     -webkit-background-clip: text;
     color: #fbff90;
 }
+
 .home_b_btn2:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(45deg, orangeRed 50%, white 50%);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, orangeRed 50%, white 50%);
+    z-index: -1;
 }
+
 .home_b_btn2,
 .home_b_btn2:after {
-  background-size: 300%;
-  background-position: 100%;
-  transition: 1s, font-size 0.2s;
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
 }
+
 .home_b_btn2:hover,
 .home_b_btn2:hover:after {
-  background-position: 0;
-  font-size: 1.1em;
-  color: white;
+    background-position: 0;
+    font-size: 1.1em;
+    color: white;
 }
 
 /* Post container styles */
 .posts_container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
 }
+
 .posts_container img {
-  max-width: 200px;
-  max-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 /* form styles */
 
 .menu_container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  margin-left: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    margin-left: 10px;
 
 }
- form .selectstyle  {
-  text-align: center;
-  width: 100%;
-  height: 30px;
-  margin-top: 10px;
+
+form .selectstyle {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
 }
+
 .selectstyle {
-  text-align-last: center;
-  padding-right: 29px;
+    text-align-last: center;
+    padding-right: 29px;
 
-  height: 30px;
-  margin-top: 15px;
-  width: 100%;
-  box-shadow: #dddddd;
+    height: 30px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: #dddddd;
 }
 
 .upload_btn_wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
+
 #lataa_kuva {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 .upload_btn_wrapper .inputstyle[type="file"] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .textareastyle {
-  width: 100%;
+    width: 100%;
 }
+
 /* Ebike form styles */
 
 #eMtb_menu {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 #eBikeType {
-  color: blue;
+    color: blue;
 }
+
 #mySelect {
-  color: red;
+    color: red;
 }
+
 /* Footer syles*/
 #footer {
     padding: 20px;
     width: 100%;
     height: 65px;
     background-color: #001;
-    
+
 }
+
 #footer #footer_teksti {
     width: 100%;
     color: darkgray;
     text-align: center;
     font-size: 12px;
 }
-#div_footerc{
+
+#div_footerc {
     width: 100%;
     height: 30px;
     padding: 0px 0px 0px 0px;
     background-color: #001;
-    
+
 }
+
 #div_footerc #footer_copyright {
     width: 100%;
     color: darkgray;
     text-align: center;
     font-size: 13px;
-    
-    
+
+
 }
 
 
 /* register.html styles */
-.main_register{
+.main_register {
     background-color: #9eaca7;
     max-width: 900px;
     height: 1000px;
     border: 1.9px solid #5a5f78;
     margin: auto;
 }
-#logo_container1{
+
+#logo_container1 {
     width: 100%;
     height: 320px;
     background-color: green;
 }
-#logo_container1 #logo_register1{
-    
+
+#logo_container1 #logo_register1 {}
+
+#register_formi1 {
+    position: absolute;
+    box-shadow: 0px 5px 30px 5px #5a5f82;
+    top: 500px;
+    left: 50%;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color: darkred;
+    border: groove yellow 15px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-#register_formi1{
-  position: absolute;
-  box-shadow: 0px 5px 30px 5px #5a5f82;
-  top: 500px;
-  left: 50%;
-  padding: 10px;
-  margin-bottom: 50px;
-  margin-top: -150px;
-  margin-left: -150px;
-  width: 300px;
-  height: 500px;    
-  text-align: center;
-  background-color: darkred;
-  border: groove yellow 15px;
-  background-color:rgba(255,255,255,0.1);
+
+#body_register {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/testi_kuva4.jpg');
+    height: 1700px;
+    background-size: cover;
+    background-position: center;
 }
-#body_register{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../imgs/testi_kuva4.jpg');
-  height: 1700px;
-  background-size: cover;
-  background-position: center;
-}
-.header_register{
+
+.header_register {
     display: grid;
     grid-template-columns: 35% 35% 270px;
     background-color: #06d641;
     font-size: 20px;
 }
-#register_inputs1{
-  background-color: white;
-  height: 30px;
-  position: static;
-  left: 100px;
-  margin-top: 25px;
-  margin-left: 64px;
-  margin-bottom: 10px;
+
+#register_inputs1 {
+    background-color: white;
+    height: 30px;
+    position: static;
+    left: 100px;
+    margin-top: 25px;
+    margin-left: 64px;
+    margin-bottom: 10px;
 }
-.register_btn1{
- padding: 8px 16px;
- border-radius: 4px;
- cursor: pointer;
- border: 2px solid orangeRed;
- background: linear-gradient(45deg, #fff 50%, #7a83cb 50%);
- position: relative;
- color: black;
+
+.register_btn1 {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid orangeRed;
+    background: linear-gradient(45deg, #fff 50%, #7a83cb 50%);
+    position: relative;
+    color: black;
 
 }
-.register_btn1:after{
- content:"";
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- background: linear-gradient(45deg, orangeRed 50%, transparent 50%);
- z-index: -1;
+
+.register_btn1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, orangeRed 50%, transparent 50%);
+    z-index: -1;
 }
+
 .register_btn1,
-.register_btn1:after{
- background-size: 300%;
- background-position: 100%;
- transition: 1s, font-size 0.2s;
+.register_btn1:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
 }
-.register_btn1:hover{
- background-position: 0;
+
+.register_btn1:hover {
+    background-position: 0;
     font-size: 1.1em;
     color: red;
 }
-.div_tyhja_vali{
+
+.div_tyhja_vali {
     position: absolute;
     top: 900px;
     padding: 0px 1303px 0px 0px;
@@ -530,9 +589,10 @@ h12{
     height: 30px;
     border: 5px solid red;
 }
+
 /**/
 
-.dkuvat{
+.dkuvat {
     border: 2px solid red;
     width: 100%;
     display: flex;
@@ -540,7 +600,8 @@ h12{
     float: right;
     background-color: DodgerBlue;
 }
-.dkuvat > .picitems{
+
+.dkuvat > .picitems {
     background-color: #f1f1f1;
     width: 400px;
     height: 200px;
@@ -550,8 +611,9 @@ h12{
     text-align: center;
     font-size: 30px;
 }
+
 /* tarkka hakun  stylee alkaa tasta! */
-.tarkkahaku_div{
+.tarkkahaku_div {
     border: 10px solid dodgerblue;
     width: 100%;
     display: flex;
@@ -559,61 +621,71 @@ h12{
     background: skyblue;
     height: 500px;
 }
-#radios_div{
+
+#radios_div {
     border: 1px solid red;
     width: 50%;
     background: yellow;
 }
-#radios_div .formin_haku{
+
+#radios_div .formin_haku {
     position: relative;
     margin: 10px 0px 10px 4px;
-    
+
 }
-.valitsemalli{
-    font-size: 10px;
-    
-}
-.valitsekoko{
+
+.valitsemalli {
     font-size: 10px;
 
 }
-.kolmas{
+
+.valitsekoko {
+    font-size: 10px;
+
+}
+
+.kolmas {
     font-size: 10px;
 }
-.flex-container{
+
+.flex-container {
     background-color: dodgerblue;
-    
+
 }
-        
-.flex-container > div{
+
+.flex-container > div {
     background-color: #f1f1f1;
     margin: 1px;
     padding: 20px;
 }
-.neljas{
+
+.neljas {
     font-size: 10px;
 }
+
 /**********
 accurate searchForm styles
 **********/
-.selectstyle{
-    
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
-  width: 100%;
-  box-shadow: #dddddd;
-  text-align-last: center;
+.selectstyle {
+
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: #dddddd;
+    text-align-last: center;
 }
-.inputstyle{
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
-  width: 100%;
-  box-shadow: #dddddd;
-  text-align: center;
+
+.inputstyle {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: #dddddd;
+    text-align: center;
 }
-#haestyle{
+
+#haestyle {
     text-align: center;
     width: 100%;
     height: 30px;
@@ -622,108 +694,242 @@ accurate searchForm styles
     background-color: skyblue;
     cursor: pointer;
 }
-#haestyle:hover{
+
+#haestyle:hover {
     background-color: deepskyblue;
 }
+/*-------_____tästä alkaa ilmoituksen styleeee_____--------*/
+.ilmoituksen_main{
+    background-color: white;
+    max-width: 900px;
+    border: 1.9px solid #5a5f78;
+    margin: auto;
+    height: 1000px;
+    
+}
 
-@media screen and (max-width: 715px) {
-  .logotexti{
+.ilmoituksen_img{
+    width:450px;
+    left:25%;
+    position: relative;
+    top:30px;
+}
+.ilmoituksen_lisatietoja{
+    box-shadow: 0px 0px 5px 0px red;
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    width: 90%;
+    left: 45px;
+    top: 30px;
+    position: relative;
+}
+.lisatietoja_tekstit{
     font-size: 20px;
-  }
-    .logotextii{
-        font-size: 14px;;
+    color: #333;
+}
+.ilmoituksen_omistajantiedot{
+    position: relative;
+    top: 50px;
+    left: 85px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px yellow;
+    width: 80%;
+}
+.omistajan_email{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    background-color: blue;
+    background-image: url(../logot/email_iconi.png);
+    background-repeat: no-repeat, repeat;
+}
+.omis_email{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.omistajan_email_labeldiv{
+    top: 14px;
+    position: absolute;
+    left: 70px;
+    cursor: pointer;
+}
+/*#om_email{
+    display: none;
+}*/
+.omistajan_puhnum{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    left: 400px;
+    background-color: blue;
+    background-image: url(../logot/puhnum_iconi.png);
+    background-repeat: no-repeat, repeat;
+    position: absolute;
+    top: 0px;
+    display: block;
+}
+.omis_puhnum{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    left: 400px;
+    text-align: center;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    display: none;
+    
+}
+.omistajan_puhnum_teksti{
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    color: white;
+    font-size: 20px;
+}
+#om_puhnum{
+    color: wheat;
+    top: 14px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: blue;
+}
+/*.om_puhnum{
+    font-size:15px;
+    color: white;*/
+}
+@media screen and (max-width: 715px) {
+    .logotexti {
+        font-size: 20px;
     }
-    .home_log_btn{
+    .ilmoituksen_img{
+        width: 60%;
+    }
+
+    .logotextii {
+        font-size: 14px;
+        ;
+    }
+
+    .home_log_btn {
         margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 520px) {
-  .logotexti{
-    font-size: 15px;
-  }
-    .logotextii{
-        height: 20px;
-        font-size: 10px;
-    }
-}
-/*
-@media screen and (max-width: 480px) {
-  .logotexti{
-    
-    font-size: 10px;
-  }
-    .logotextii{
-        height: 20px;
-        font-size: 10px;
-    }
-}
-*/
-@media screen and (max-width: 875px) {
-    .btn_1{
+    .logotexti {
         font-size: 15px;
-        border-radius: 1px;
-        padding: 1px;
-        margin: 1%;
     }
-    .home_log_btn{
-    left: 1px;
-    }
-    
-}
-@media screen and (max-width: 455px) {
-    h4{
-        font-size: 10px;
-    }
-    p{
+
+    .logotextii {
+        height: 20px;
         font-size: 10px;
     }
 }
-@media screen and (max-width: 335px) {
-    h4{
-        font-size: 6.5px;
-    }
-    p{
-        font-size: 6.5px;
-    }
-}
-@media screen and (max-width: 380px) {
-    .home_b_btn2{
-        left: 1px;
+
+
+@media screen and (max-width: 776px) {
+    .ilmoituksen_img{
+        left: 22%;
         
     }
-    .t_and_j_btns{
+}
+
+@media screen and (max-width: 891px) {
+    .btn_1 {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 875px) {
+
+    .home_log_btn {
+        left: 1px;
+    }
+
+}
+
+@media screen and (max-width: 455px) {
+    h4 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    h4 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    .a_ilmoitus {
+        font-size: 10%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .home_b_btn2 {
+        left: 1px;
+    }
+
+    .t_and_j_btns {
         height: 120px;
     }
 }
+
 @media screen and (max-width: 255px) {
-    #accurate_search{
+    #accurate_search {
         width: 80%;
     }
-    #leave_post_btn{
+
+    #leave_post_btn {
         width: 80%;
     }
 }
+
 @media screen and (max-width: 1100px) {
-    
-    #div_footerc{
+
+    #div_footerc {
         padding: 10px 0px 20px 0px;
     }
 }
+
 @media screen and (max-width: 585px) {
-    
-    #footer{
+
+    #footer {
         height: 100px;
     }
-    #div_footerc{
+
+    #div_footerc {
         height: 80px;
         padding: 20px 0px 20px 0px;
     }
 }
+
 @media screen and (max-width: 430px) {
-    
-    #footer{
+
+    #footer {
         height: 120px;
     }
-   
+
+    .a_ilmoitus {
+        font-size: 80%;
+    }
 }
