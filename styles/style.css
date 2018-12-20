@@ -45,6 +45,7 @@
 .pitoisuus {
     background-color: #5c86a4;
     padding: 10px;
+    
 }
 
 /*----ava_ilmoitus----*/
@@ -704,109 +705,88 @@ accurate searchForm styles
     max-width: 900px;
     border: 1.9px solid #5a5f78;
     margin: auto;
-    height: 1000px;
     
 }
 
 .ilmoituksen_img{
     width:450px;
-    left:25%;
-    position: relative;
-    top:30px;
+    margin-left: 230px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .ilmoituksen_lisatietoja{
     box-shadow: 0px 0px 5px 0px red;
     padding: 20px;
     text-align: center;
     font-family: arial;
-    width: 90%;
-    left: 45px;
-    top: 30px;
-    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+   
 }
 .lisatietoja_tekstit{
     font-size: 20px;
     color: #333;
 }
 .ilmoituksen_omistajantiedot{
-    position: relative;
-    top: 50px;
-    left: 85px;
     text-align: center;
+    border: 5px solid green;
     box-shadow: 0px 0px 10px 0px yellow;
-    width: 80%;
-}
-.omistajan_email{
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 220px;
-    height: 53px;
-    background-color: blue;
-    background-image: url(../logot/email_iconi.png);
-    background-repeat: no-repeat, repeat;
-}
-.omis_email{
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
-
-.omistajan_email_labeldiv{
-    top: 14px;
-    position: absolute;
-    left: 70px;
-    cursor: pointer;
-}
-/*#om_email{
-    display: none;
-}*/
-.omistajan_puhnum{
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 220px;
-    height: 53px;
-    left: 400px;
-    background-color: blue;
-    background-image: url(../logot/puhnum_iconi.png);
-    background-repeat: no-repeat, repeat;
-    position: absolute;
-    top: 0px;
-    display: block;
-}
-.omis_puhnum{
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 220px;
-    height: 53px;
-    left: 400px;
-    text-align: center;
-    background-color: blue;
-    position: absolute;
-    top: 0px;
-    display: none;
+    width: 90%; 
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 50px;
     
 }
-.omistajan_puhnum_teksti{
-    position: absolute;
-    left: 65px;
-    top: 15px;
+
+.omistajan_email{
+    padding: 28px 0px 0px 0px;
+    width: 170px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 110px;
+    border: 3px solid brown;
+    background-image: url(../logot/email_iconi.png);
+    background-repeat: no-repeat, repeat;
+    background-color: royalblue;
+    text-align: center;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 10px;
+
+    
+}
+.label_email{
     color: white;
-    font-size: 20px;
-}
-#om_puhnum{
-    color: wheat;
-    top: 14px;
     position: relative;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: blue;
+    left: 20px;
+    top: -12px;
 }
-/*.om_puhnum{
-    font-size:15px;
-    color: white;*/
+.omistajan_puhnum{
+    padding: 28px 0px 0px 0px;
+    width: 170px;
+    margin-right: 110px;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 3px solid brown;
+    background-image: url(../logot/puhnum_iconi.png);
+    background-repeat: no-repeat, repeat;
+    background-color: royalblue;
+    text-align: center;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+.label_puhnum{
+    color: white;
+    position: relative;
+    left: 20px;
+    top: -12px;
+    cursor:;
 }
 @media screen and (max-width: 715px) {
     .logotexti {
