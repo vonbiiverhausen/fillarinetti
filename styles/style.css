@@ -102,6 +102,7 @@ li a:hover {
 
 #logo {
     width: 120%;
+    cursor: pointer;
 }
 
 #logo_container {
@@ -697,10 +698,122 @@ accurate searchForm styles
 #haestyle:hover {
     background-color: deepskyblue;
 }
+/*-------_____tästä alkaa ilmoituksen styleeee_____--------*/
+.ilmoituksen_main{
+    background-color: white;
+    max-width: 900px;
+    border: 1.9px solid #5a5f78;
+    margin: auto;
+    height: 1000px;
+    
+}
 
+.ilmoituksen_img{
+    width:450px;
+    left:25%;
+    position: relative;
+    top:30px;
+}
+.ilmoituksen_lisatietoja{
+    box-shadow: 0px 0px 5px 0px red;
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    width: 90%;
+    left: 45px;
+    top: 30px;
+    position: relative;
+}
+.lisatietoja_tekstit{
+    font-size: 20px;
+    color: #333;
+}
+.ilmoituksen_omistajantiedot{
+    position: relative;
+    top: 50px;
+    left: 85px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px yellow;
+    width: 80%;
+}
+.omistajan_email{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    background-color: blue;
+    background-image: url(../logot/email_iconi.png);
+    background-repeat: no-repeat, repeat;
+}
+.omis_email{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.omistajan_email_labeldiv{
+    top: 14px;
+    position: absolute;
+    left: 70px;
+    cursor: pointer;
+}
+/*#om_email{
+    display: none;
+}*/
+.omistajan_puhnum{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    left: 400px;
+    background-color: blue;
+    background-image: url(../logot/puhnum_iconi.png);
+    background-repeat: no-repeat, repeat;
+    position: absolute;
+    top: 0px;
+    display: block;
+}
+.omis_puhnum{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 53px;
+    left: 400px;
+    text-align: center;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    display: none;
+    
+}
+.omistajan_puhnum_teksti{
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    color: white;
+    font-size: 20px;
+}
+#om_puhnum{
+    color: wheat;
+    top: 14px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: blue;
+}
+/*.om_puhnum{
+    font-size:15px;
+    color: white;*/
+}
 @media screen and (max-width: 715px) {
     .logotexti {
         font-size: 20px;
+    }
+    .ilmoituksen_img{
+        width: 60%;
     }
 
     .logotextii {
@@ -724,18 +837,14 @@ accurate searchForm styles
     }
 }
 
-/*
-@media screen and (max-width: 480px) {
-  .logotexti{
-    
-    font-size: 10px;
-  }
-    .logotextii{
-        height: 20px;
-        font-size: 10px;
+
+@media screen and (max-width: 776px) {
+    .ilmoituksen_img{
+        left: 22%;
+        
     }
 }
-*/
+
 @media screen and (max-width: 891px) {
     .btn_1 {
         margin-top: 15px;
