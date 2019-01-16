@@ -320,3 +320,11 @@ function listan_tyyli_riviksi() {
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction) // Attach listener function on state changes
 }
+/*.................................................................................................*/
+
+function nayta_numero(){
+    document.getElementById("numero_show").style.display = "block";
+}
+function hide_numero(){
+    document.getElementById("numero_show").style.display = "none";
+}

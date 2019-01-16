@@ -737,7 +737,7 @@ accurate searchForm styles
     margin-top: 10px;
     margin-bottom: 50px;
     margin-right: 50px;
-    
+    padding: 0px 0px 0px 0px;   
 }
 
 .omistajan_email{
@@ -747,7 +747,7 @@ accurate searchForm styles
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 110px;
-    border: 3px solid brown;
+    border: 1.5px solid brown;
     background-image: url(../logot/email_iconi.png);
     background-repeat: no-repeat, repeat;
     background-color: royalblue;
@@ -771,7 +771,7 @@ accurate searchForm styles
     float: right;
     margin-top: 0px;
     margin-bottom: 10px;
-    border: 3px solid brown;
+    border: 1.5px solid brown;
     background-image: url(../logot/puhnum_iconi.png);
     background-repeat: no-repeat, repeat;
     background-color: royalblue;
@@ -779,6 +779,28 @@ accurate searchForm styles
     font-family: arial;
     font-size: 16px;
     border-radius: 10px;
+    cursor: pointer;
+    
+}
+.omistajan_puhnum2{
+    position: absolute;
+    padding: 16px 0px 12px 34px;
+    width: 170px;
+    left: 793.5px;
+    border: 1.5px solid brown;
+    background-image: url(../logot/puhnum_iconi.png);
+    background-repeat: no-repeat, repeat;
+    background-color: royalblue;
+    text-align: center;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 10px;
+    display: none;
+    /*css coding of disable text copy*/
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -o-user-select:none;
+ -user-select:none;
     
 }
 .label_puhnum{
@@ -786,7 +808,10 @@ accurate searchForm styles
     position: relative;
     left: 20px;
     top: -12px;
-    cursor:;
+    cursor:pointer;
+}.label_puhnum2{
+    color: white;
+    cursor:pointer;
 }
 @media screen and (max-width: 715px) {
     .logotexti {

@@ -7,6 +7,7 @@
     <title>Fillarinetti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+     <script src="scripts/script.js"></script>
 
 </head>
 <body id="index_body">
@@ -41,10 +42,14 @@
           <div class="omistajan_email">
               <label class="label_email">Lähetä viesti</label>
           </div>
-          <div class="omistajan_puhnum">
+          <div id="numero_hide" class="omistajan_puhnum" onclick="nayta_numero()">
               <label class="label_puhnum">Näytä numero</label>
           </div>
+             <div id="numero_show" class="omistajan_puhnum2" onclick="hide_numero()">
+              <label class="label_puhnum2">0400269109</label>
+          </div>
              
+         </div>
          </div>
          </div>
          
